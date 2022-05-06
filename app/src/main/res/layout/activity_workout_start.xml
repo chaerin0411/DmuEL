@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/rounded_corner_button"
+    android:orientation="vertical"
+    tools:context=".WorkoutStartActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo"></ImageView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+
+    <!-- Zapoff Button -->
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/zapoffButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/zapoff"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+        <!-- Start Camera Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/startCameraButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/startcamera"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+        <!-- Back Camera Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/backCameraButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/backcamera"
+            android:layout_weight="1"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+
+    </LinearLayout>
+</LinearLayout>

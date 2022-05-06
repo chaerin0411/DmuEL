@@ -13,12 +13,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.loginButton.setOnClickListener {
-            //var intent = Intent(applicationContext, LoginActivity::class.java)
+            var intent = Intent(applicationContext, WelcomeActivity::class.java)
             startActivity(intent)
         }
 
-        binding.joinButton.setOnClickListener {
-            var intent = Intent(applicationContext, JoinActivity::class.java)
+        binding.registerButton.setOnClickListener {
+            var intent = Intent(applicationContext, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

@@ -13,9 +13,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.startButton.setOnClickListener {
-            var intent = Intent(applicationContext, LoginActivity::class.java)
+        binding.recordButton.setOnClickListener {
+            var intent = Intent(applicationContext, RecordActivity::class.java)
             startActivity(intent)
         }
+
+        binding.guidButton.setOnClickListener {
+            var intent = Intent(applicationContext, GuidLibraryActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.photoButton.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutStartActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.communityButton.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutDetailActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.profileButton.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutProjectActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

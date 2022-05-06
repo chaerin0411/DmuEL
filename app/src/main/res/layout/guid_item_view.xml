@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon1 -->
+        <ImageView
+            android:id="@+id/guidList_icon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist1"></ImageView>
+
+        <!-- GuidList_title1 -->
+        <TextView
+            android:id="@+id/guidList_title1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Bicep"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon2 -->
+        <ImageView
+            android:id="@+id/guidList_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist2"></ImageView>
+
+        <!-- GuidList_title2 -->
+        <TextView
+            android:id="@+id/guidList_title2"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Body-Back"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon3 -->
+        <ImageView
+            android:id="@+id/guidList_icon3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist3"></ImageView>
+
+        <!-- GuidList_title3 -->
+        <TextView
+            android:id="@+id/guidList_title3"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Body-Butt"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon4 -->
+        <ImageView
+            android:id="@+id/guidList_icon4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist4"></ImageView>
+
+        <!-- GuidList_title4 -->
+        <TextView
+            android:id="@+id/guidList_title4"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Legs and Core"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon5 -->
+        <ImageView
+            android:id="@+id/guidList_icon5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist5"></ImageView>
+
+        <!-- GuidList_title5 -->
+        <TextView
+            android:id="@+id/guidList_title5"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Pectoral machine"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon6 -->
+        <ImageView
+            android:id="@+id/guidList_icon6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist6"></ImageView>
+
+        <!-- GuidList_title6 -->
+        <TextView
+            android:id="@+id/guidList_title6"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Legs and Core"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon7 -->
+        <ImageView
+            android:id="@+id/guidList_icon7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist7"></ImageView>
+
+        <!-- GuidList_title7 -->
+        <TextView
+            android:id="@+id/guidList_title7"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Weight bench"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- GuidList_icon8 -->
+        <ImageView
+            android:id="@+id/guidList_icon8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist8"></ImageView>
+
+        <!-- GuidList_title8 -->
+        <TextView
+            android:id="@+id/guidList_title8"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Weight loss"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

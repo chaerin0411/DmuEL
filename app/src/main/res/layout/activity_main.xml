@@ -4,33 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="100sp"
-        android:text="exerciseX"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="36sp"
-        android:text="Everybody Can Train"/>
 
     <Button
-        android:id="@+id/start_button"
+    android:id="@+id/recordButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Record" />
+
+    <Button
+        android:id="@+id/guidButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/round_button"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:text="시작하기"/>
+        android:text="Guid" />
 
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo" />
+
+    <Button
+        android:id="@+id/communityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile" />
 </LinearLayout>

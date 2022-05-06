@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pinkbase"
+    android:foreground="@drawable/illustration"
+    android:orientation="vertical"
+    tools:context=".WorkoutDetailActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <!-- Back Arrow Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_corner_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/backarrow"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+        <!-- Body-Back -->
+        <TextView
+            android:id="@+id/WorkoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:text="Body-Back"
+            android:textColor="#1D1617"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- More Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/moreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/more"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+    </LinearLayout>
+
+    <!-- Workout Detail Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/project"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Heart Image -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/heart"></ImageView>
+
+                <!-- WorkoutDetailKcal1 -->
+                <TextView
+                    android:id="@+id/workoutDetailKcal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="246 Kcal"
+                    android:textColor="#1D1617"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <!-- Last 7 days -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Last 7 days"
+                    android:textColor="#7F7F7F"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Heart Image -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/heart"></ImageView>
+
+                <!-- workoutDetailKcal2 -->
+                <TextView
+                    android:id="@+id/workoutDetailKcal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="84k Kcal"
+                    android:textColor="#1D1617"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <!-- All Time -->
+                <TextView
+                    android:id="@+id/workoutProjectContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="All Time"
+                    android:textColor="#7F7F7F"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Heart Image -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/heart"></ImageView>
+
+                <!-- workoutDetailKcal3 -->
+                <TextView
+                    android:id="@+id/workoutDetailKcal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="72 Kcal"
+                    android:textColor="#1D1617"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <!-- Average -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Average"
+                    android:textColor="#7F7F7F"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <!-- Information -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Information"
+                android:textColor="#040415"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <!-- Workout Detail Content -->
+            <TextView
+                android:id="@+id/workoutDetailContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Shift stubborn body fat and build muscle with this total-body workout. If you’re an experienced gym-goer hitting the weights room for long sessions several times a week, the chances are you have a structured training plan that targets different areas of the body with each workout."
+                android:textColor="#7F7F7F"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

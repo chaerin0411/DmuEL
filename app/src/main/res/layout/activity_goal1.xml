@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GoalActivity1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/register"></ImageView>
+
+    <!-- Let’s complete your profile -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Let’s complete your profile"
+        android:textColor="#1D1617"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- It will help us to know more about you! -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="It will help us to know more about you!"
+        android:textColor="#7B6F72"
+        android:textSize="12dp"></TextView>
+
+    <!-- Choose Gender -->
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <!-- Man -->
+        <RadioButton
+            android:id="@+id/manRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Man" />
+
+        <!-- Woman -->
+        <RadioButton
+            android:id="@+id/womanRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Woman" />
+    </RadioGroup>
+
+    <!-- Date of Birth -->
+    <EditText
+        android:id="@+id/birthEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:hint="  Date of Birth"
+        android:inputType="date"></EditText>
+
+    <!-- Your Height -->
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:hint="  Your Height"
+        android:inputType="number"></EditText>
+
+    <!-- Your Weight -->
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:hint="  Your Weight"
+        android:inputType="number"></EditText>
+
+    <!-- Next Button -->
+    <TextView
+        android:id="@+id/nextButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:text="Next >"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+</LinearLayout>

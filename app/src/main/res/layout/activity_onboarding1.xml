@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".OnboardingActivity1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/onboarding1"></ImageView>
+
+    <!-- Track Your Goal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Track Your Goal"
+        android:textColor="#1D1617"
+        android:textSize="24dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- You are all set now, let’s reach your goals together with us -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals"
+        android:textColor="#7B6F72"
+        android:textSize="14dp"></TextView>
+
+    <!-- Onboarding Button1 -->
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/onboardingButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/onboardingbutton1"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+
+</LinearLayout>

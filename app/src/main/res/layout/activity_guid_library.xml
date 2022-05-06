@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pinkbase"
+    android:foreground="@drawable/illustration"
+    android:orientation="vertical"
+    tools:context=".GuidLibraryActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <!-- Back Arrow Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_corner_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/backarrow"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+        <!-- Start Workout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:text="Start Workout"
+            android:textColor="#1D1617"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- More Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/moreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/more"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <!-- Guid Content -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/guidList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_corner_edittext"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/guid_item_view"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
