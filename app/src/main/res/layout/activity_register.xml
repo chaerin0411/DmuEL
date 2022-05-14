@@ -7,7 +7,6 @@
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
-
     <!-- Hey there, -->
     <TextView
         android:layout_width="wrap_content"
@@ -138,5 +137,4 @@
         android:text="Already have an account? Login"
         android:textColor="#1D1617"
         android:textSize="14dp"></TextView>
-
 </LinearLayout>

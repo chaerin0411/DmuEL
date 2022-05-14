@@ -3,52 +3,51 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/round_button.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/calendar.xml" value="0.1155" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/item.xml" value="0.1155" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/round_edit.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_button.xml" value="0.1155" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_edittext.xml" value="0.1155" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_item.xml" value="0.1155" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal1.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal2.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_guid_library.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_join.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_login.xml" value="0.11510416666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_login1.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/round_button.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/round_corner_text.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/rounded_corner_editText.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/round_edit.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_lgoin.xml" value="0.11963696369636964" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/round_button.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/round_edit.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_button.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_content.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_edittext.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_feed.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_message.xml" value="0.175" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal1.xml" value="0.22" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal2.xml" value="0.22" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_guid_library.xml" value="0.11367753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_login.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding1.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding2.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding3.xml" value="0.10666666666666667" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_record.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register1.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register2.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register3.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register5.xml" value="0.11510416666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_welcome.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_details.xml" value="0.175" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_project.xml" value="0.11510416666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_start.xml" value="0.6666666666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/guid_item_view.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/item_view.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/login_fragment.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/onboarding_fragment1.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/onboarding_fragment2.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/onboarding_fragment3.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/project_item_view.xml" value="0.175" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/record_item_view.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/register_fragment1.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/register_fragment2.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/register_fragment3.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/register_fragment4.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/register_fragment5.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/welcome_fragment.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/menu/bottom_navigation_main.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding1.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding2.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding3.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_record.xml" value="0.1" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_welcome.xml" value="0.22" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_detail.xml" value="0.175" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_details.xml" value="0.11367753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_guid_library.xml" value="0.175" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_project.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_record.xml" value="0.1" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_start.xml" value="0.12" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/community_item_view.xml" value="0.175" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/guid_item_view.xml" value="0.11367753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/message_item_view.xml" value="0.175" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/profile_item_view.xml" value="0.175" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/project_item_view.xml" value="0.11367753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/record_item_view.xml" value="0.175" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

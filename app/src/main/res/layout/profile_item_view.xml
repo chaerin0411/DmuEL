@@ -6,6 +6,16 @@
     android:layout_marginBottom="5dp"
     android:orientation="vertical">
 
+    <!-- Settings -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Settings"
+        android:textColor="#1D1617"
+        android:textSize="18dp"
+        android:textStyle="bold"></TextView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,22 +24,22 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon1 -->
+        <!-- profileList_icon1 -->
         <ImageView
-            android:id="@+id/guidList_icon1"
+            android:id="@+id/profileList_icon1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist1"></ImageView>
 
-        <!-- GuidList_title1 -->
+        <!-- profileList_title1 -->
         <TextView
-            android:id="@+id/guidList_title1"
-            android:layout_width="300dp"
+            android:id="@+id/profileList_title1"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="Bicep"
+            android:text="Goals"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textStyle="bold"></TextView>
@@ -49,22 +59,22 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon2 -->
+        <!-- ProfileList_icon2 -->
         <ImageView
-            android:id="@+id/guidList_icon2"
+            android:id="@+id/profileList_icon2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist2"></ImageView>
 
-        <!-- GuidList_title2 -->
+        <!-- ProfileList_title2 -->
         <TextView
-            android:id="@+id/guidList_title2"
-            android:layout_width="300dp"
+            android:id="@+id/profileList_title2"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="Body-Back"
+            android:text="My Workouts"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textStyle="bold"></TextView>
@@ -84,22 +94,22 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon3 -->
+        <!-- ProfileList_icon3 -->
         <ImageView
-            android:id="@+id/guidList_icon3"
+            android:id="@+id/profileList_icon3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist3"></ImageView>
 
-        <!-- GuidList_title3 -->
+        <!-- ProfileList_title3 -->
         <TextView
-            android:id="@+id/guidList_title3"
-            android:layout_width="300dp"
+            android:id="@+id/profileList_title3"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="Body-Butt"
+            android:text="My Feeds"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textStyle="bold"></TextView>
@@ -119,22 +129,22 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon4 -->
+        <!-- ProfileList_icon4 -->
         <ImageView
-            android:id="@+id/guidList_icon4"
+            android:id="@+id/profileList_icon4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist4"></ImageView>
 
-        <!-- GuidList_title4 -->
+        <!-- ProfileList_title4 -->
         <TextView
-            android:id="@+id/guidList_title4"
-            android:layout_width="300dp"
+            android:id="@+id/profileList_title4"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="Legs and Core"
+            android:text="My Favorites"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textStyle="bold"></TextView>
@@ -154,22 +164,22 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon5 -->
+        <!-- ProfileList_icon5 -->
         <ImageView
-            android:id="@+id/guidList_icon5"
+            android:id="@+id/profileList_icon5"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist5"></ImageView>
 
-        <!-- GuidList_title5 -->
+        <!-- ProfileList_title5 -->
         <TextView
-            android:id="@+id/guidList_title5"
-            android:layout_width="300dp"
+            android:id="@+id/profileList_title5"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="Pectoral machine"
+            android:text="Notification"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textStyle="bold"></TextView>
@@ -189,92 +199,22 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon6 -->
+        <!-- ProfileList_icon6 -->
         <ImageView
-            android:id="@+id/guidList_icon6"
+            android:id="@+id/profileList_icon6"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist6"></ImageView>
 
-        <!-- GuidList_title6 -->
+        <!-- ProfileList_title6 -->
         <TextView
-            android:id="@+id/guidList_title6"
-            android:layout_width="300dp"
+            android:id="@+id/profileList_title6"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="Legs and Core"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon7 -->
-        <ImageView
-            android:id="@+id/guidList_icon7"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist7"></ImageView>
-
-        <!-- GuidList_title7 -->
-        <TextView
-            android:id="@+id/guidList_title7"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Weight bench"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon8 -->
-        <ImageView
-            android:id="@+id/guidList_icon8"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist8"></ImageView>
-
-        <!-- GuidList_title8 -->
-        <TextView
-            android:id="@+id/guidList_title8"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Weight loss"
+            android:text="Logout"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textStyle="bold"></TextView>

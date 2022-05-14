@@ -20,7 +20,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="5dp"
         android:text="It will help us to choose a best program for you"
         android:textColor="#7B6F72"
@@ -60,7 +59,6 @@
         android:id="@+id/confirmButton1"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/rounded_corner_button"
@@ -74,6 +72,4 @@
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"></TextView>
-
-
 </LinearLayout>

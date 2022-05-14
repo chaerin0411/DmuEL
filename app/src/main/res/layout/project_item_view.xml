@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -31,7 +31,6 @@
             android:id="@+id/projectList_icon1"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist1"></ImageView>
 
@@ -40,7 +39,6 @@
             android:id="@+id/projectList_title1"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Bicep"
@@ -52,7 +50,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -60,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -69,7 +66,6 @@
             android:id="@+id/projectList_icon2"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist2"></ImageView>
 
@@ -78,7 +74,6 @@
             android:id="@+id/projectList_title2"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Body-Back"
@@ -90,7 +85,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -98,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -107,7 +101,6 @@
             android:id="@+id/projectList_icon3"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist3"></ImageView>
 
@@ -116,7 +109,6 @@
             android:id="@+id/projectList_title3"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Body-Butt"
@@ -128,7 +120,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -136,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -145,7 +136,6 @@
             android:id="@+id/projectList_icon4"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist4"></ImageView>
 
@@ -154,7 +144,6 @@
             android:id="@+id/projectList_title4"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Legs and Core"
@@ -166,7 +155,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -174,7 +162,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -183,7 +171,6 @@
             android:id="@+id/projectList_icon5"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist5"></ImageView>
 
@@ -192,7 +179,6 @@
             android:id="@+id/projectList_title5"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Pectoral machine"
@@ -204,7 +190,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -212,7 +197,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -221,7 +206,6 @@
             android:id="@+id/projectList_icon6"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist6"></ImageView>
 
@@ -230,7 +214,6 @@
             android:id="@+id/projectList_title6"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Legs and Core"
@@ -242,7 +225,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -250,7 +232,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -259,7 +241,6 @@
             android:id="@+id/projectList_icon7"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist7"></ImageView>
 
@@ -268,7 +249,6 @@
             android:id="@+id/projectList_title7"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Weight bench"
@@ -280,7 +260,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
 
@@ -288,7 +267,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="#EAECEB"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -297,7 +276,6 @@
             android:id="@+id/projectList_icon8"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
             android:background="@drawable/guidlist8"></ImageView>
 
@@ -306,7 +284,6 @@
             android:id="@+id/projectList_title8"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
             android:text="Weight loss"
@@ -318,8 +295,6 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:background="@drawable/arrow"></ImageView>
     </LinearLayout>
-
 </LinearLayout>

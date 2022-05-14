@@ -43,10 +43,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".RecordActivity"
+            android:name=".WorkoutRecordActivity"
             android:exported="false" />
         <activity
-            android:name=".GuidLibraryActivity"
+            android:name=".WorkoutGuidLibraryActivity"
             android:exported="false" />
         <activity
             android:name=".WorkoutProjectActivity"
@@ -56,6 +56,12 @@
             android:exported="false" />
         <activity
             android:name=".WorkoutStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
             android:exported="false" />
     </application>
 

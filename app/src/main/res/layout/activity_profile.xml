@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFDFE4"
-    android:foreground="@drawable/illustration"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".WorkoutProjectActivity">
+    android:padding="20dp"
+    tools:context=".ProfileActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -23,18 +22,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="#FFDFE4"
+            android:background="#fff"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:src="@drawable/backarrow"></androidx.constraintlayout.utils.widget.ImageFilterButton>
 
-        <!-- Workout Project -->
+        <!-- Profile -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Workout Project"
+            android:text="Profile"
             android:textColor="#1D1617"
             android:textSize="18dp"
             android:textStyle="bold"></TextView>
@@ -44,46 +43,83 @@
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#FFDFE4"
+            android:background="#fff"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:src="@drawable/more"></androidx.constraintlayout.utils.widget.ImageFilterButton>
     </LinearLayout>
 
-    <!-- Workout Project Image -->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/project"></ImageView>
-
-    <!-- Workout Project Type -->
+    <!-- Account -->
     <TextView
-        android:id="@+id/workoutProjectType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
-        android:text="Full-Body Workout"
+        android:text="Account"
         android:textColor="#1D1617"
-        android:textSize="18dp"
-        android:textStyle="bold"></TextView>
-
-    <!-- Workout Project content -->
-    <TextView
-        android:id="@+id/workoutProjectContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Shift stubborn body fat and build muscle"
-        android:textColor="#7F7F7F"
         android:textSize="18dp"
         android:textStyle="bold"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- User Profile -->
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/project" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="User"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <!-- User Level -->
+            <TextView
+                android:id="@+id/userLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Pro"
+                android:textColor="#666666"
+                android:textSize="17dp"></TextView>
+        </LinearLayout>
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <!-- Guid Content -->
@@ -93,6 +129,6 @@
             android:layout_height="match_parent"
             android:background="@drawable/rounded_corner_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/project_item_view"></androidx.recyclerview.widget.RecyclerView>
+            tools:listitem="@layout/profile_item_view"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 </LinearLayout>

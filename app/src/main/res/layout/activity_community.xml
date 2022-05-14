@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/pinkbase"
-    android:foreground="@drawable/illustration"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".RecordActivity">
+    tools:context=".CommunityActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
@@ -22,19 +21,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/rounded_corner_button"
+            android:background="#fff"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:src="@drawable/backarrow"></androidx.constraintlayout.utils.widget.ImageFilterButton>
 
-        <!-- Calendar -->
+        <!-- Community -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_marginRight="50dp"
-            android:text="Calendar"
+            android:text="Community"
             android:textColor="#1D1617"
             android:textSize="18dp"
             android:textStyle="bold"></TextView>
@@ -44,37 +42,71 @@
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_button"
+            android:background="#fff"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/more"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <!-- User Profile -->
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/project"></ImageView>
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="User"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+        <!-- Message Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/messageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:src="@drawable/more"></androidx.constraintlayout.utils.widget.ImageFilterButton>
     </LinearLayout>
 
-    <!-- Calendar -->
-    <CalendarView
-        android:layout_width="wrap_content"
+    <!-- Search -->
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"></CalendarView>
+        android:background="@drawable/rounded_corner_feed"></androidx.appcompat.widget.SearchView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
         android:orientation="vertical">
 
         <!-- Record Content -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/guidList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/rounded_corner_edittext"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/record_item_view"></androidx.recyclerview.widget.RecyclerView>
-
+            tools:listitem="@layout/community_item_view"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 </LinearLayout>

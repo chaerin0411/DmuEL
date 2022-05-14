@@ -14,13 +14,13 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- RecordList_icon1 -->
+        <!-- User Profile1 -->
         <ImageView
-            android:id="@+id/recordList_icon1"
+            android:id="@+id/userProfile1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/recordlist1" />
+            android:background="@drawable/user" />
 
         <LinearLayout
             android:layout_width="200dp"
@@ -29,27 +29,27 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <!-- RecordList_title1 -->
+            <!-- User Name1 -->
             <TextView
-                android:id="@+id/recordList_title1"
+                android:id="@+id/userName1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="Indoor Run"
+                android:text="User1"
                 android:textColor="#000000"
                 android:textSize="17dp"
                 android:textStyle="bold" />
 
-            <!-- RecordList_time1 -->
+            <!-- User Message1 -->
             <TextView
-                android:id="@+id/recordList_time1"
+                android:id="@+id/userMessage1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="35 min"
+                android:text="Hello"
                 android:textColor="#666666"
                 android:textSize="17dp" />
         </LinearLayout>
@@ -60,28 +60,15 @@
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
 
-            <!-- RecordList_km1 -->
+            <!-- User Time1 -->
             <TextView
-                android:id="@+id/recordList_km1"
+                android:id="@+id/userTime1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="7.12 km"
-                android:textColor="#000000"
-                android:textSize="17dp"
-                android:textStyle="bold" />
-
-            <!-- RecordList_kcal1 -->
-            <TextView
-                android:id="@+id/recordList_kcal1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
-                android:text="452 kcal"
-                android:textColor="#000000"
+                android:text="35 min"
+                android:textColor="#666666"
                 android:textSize="17dp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -95,42 +82,42 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- RecordList_icon2 -->
+        <!-- User Profile2 -->
         <ImageView
-            android:id="@+id/recordList_icon2"
+            android:id="@+id/userProfile2"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
             android:layout_marginRight="30dp"
-            android:background="@drawable/recordlist2" />
+            android:background="@drawable/user" />
 
         <LinearLayout
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <!-- RecordList_title2 -->
+            <!-- User Name2 -->
             <TextView
-                android:id="@+id/recordList_title2"
+                android:id="@+id/userName2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="Outdoor Cycle"
+                android:text="User2"
                 android:textColor="#000000"
                 android:textSize="17dp"
                 android:textStyle="bold" />
 
-            <!-- RecordList_time2 -->
+            <!-- User Message2 -->
             <TextView
-                android:id="@+id/recordList_time2"
+                android:id="@+id/userMessage2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="24 min"
+                android:text="Hello"
                 android:textColor="#666666"
                 android:textSize="17dp" />
         </LinearLayout>
@@ -141,28 +128,15 @@
             android:layout_marginLeft="5dp"
             android:orientation="vertical">
 
-            <!-- RecordList_km2 -->
+            <!-- User Time2 -->
             <TextView
-                android:id="@+id/recordList_km2"
+                android:id="@+id/userTime2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="4.22 km"
-                android:textColor="#000000"
-                android:textSize="17dp"
-                android:textStyle="bold" />
-
-            <!-- RecordList_kcal2 -->
-            <TextView
-                android:id="@+id/recordList_kcal2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
-                android:text="248 kcal"
-                android:textColor="#000000"
+                android:text="35 min"
+                android:textColor="#666666"
                 android:textSize="17dp"
                 android:textStyle="bold" />
         </LinearLayout>

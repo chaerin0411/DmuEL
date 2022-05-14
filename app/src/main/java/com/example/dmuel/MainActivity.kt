@@ -1,6 +1,5 @@
 package com.example.dmuel
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.recordButton.setOnClickListener {
-            var intent = Intent(applicationContext, RecordActivity::class.java)
+            var intent = Intent(applicationContext, WorkoutRecordActivity::class.java)
             startActivity(intent)
         }
 
         binding.guidButton.setOnClickListener {
-            var intent = Intent(applicationContext, GuidLibraryActivity::class.java)
+            var intent = Intent(applicationContext, WorkoutGuidLibraryActivity::class.java)
             startActivity(intent)
         }
 

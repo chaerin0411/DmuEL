@@ -8,7 +8,7 @@
     android:foreground="@drawable/illustration"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".WorkoutProjectActivity">
+    tools:context=".WorkoutRecordActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
@@ -29,12 +29,12 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:src="@drawable/backarrow"></androidx.constraintlayout.utils.widget.ImageFilterButton>
 
-        <!-- Workout Project -->
+        <!-- Calendar -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Workout Project"
+            android:text="Calendar"
             android:textColor="#1D1617"
             android:textSize="18dp"
             android:textStyle="bold"></TextView>
@@ -51,48 +51,27 @@
             android:src="@drawable/more"></androidx.constraintlayout.utils.widget.ImageFilterButton>
     </LinearLayout>
 
-    <!-- Workout Project Image -->
-    <ImageView
+    <!-- Calendar -->
+    <CalendarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/project"></ImageView>
-
-    <!-- Workout Project Type -->
-    <TextView
-        android:id="@+id/workoutProjectType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Full-Body Workout"
-        android:textColor="#1D1617"
-        android:textSize="18dp"
-        android:textStyle="bold"></TextView>
-
-    <!-- Workout Project content -->
-    <TextView
-        android:id="@+id/workoutProjectContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Shift stubborn body fat and build muscle"
-        android:textColor="#7F7F7F"
-        android:textSize="18dp"
-        android:textStyle="bold"></TextView>
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"></CalendarView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
         android:orientation="vertical">
 
-        <!-- Guid Content -->
+        <!-- Record Content -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/guidList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/rounded_corner_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/project_item_view"></androidx.recyclerview.widget.RecyclerView>
+            tools:listitem="@layout/record_item_view"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 </LinearLayout>
