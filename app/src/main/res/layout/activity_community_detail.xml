@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:layout_marginBottom="5dp"
-    android:orientation="vertical">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CommunityDetailActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Back Arrow Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/backarrow"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+        <!-- User's Feed -->
+        <TextView
+            android:id="@+id/userFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="User's Feed"
+            android:textColor="#1D1617"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <!-- More Button -->
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/moreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -171,5 +214,20 @@
                     android:textSize="18dp"></TextView>
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Comment Content -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/guidList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/comment_item_view"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 </LinearLayout>
