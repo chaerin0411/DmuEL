@@ -9,9 +9,9 @@
     tools:context=".CommunityActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/backarrow"
+            android:background="@drawable/arrow_back"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
@@ -114,9 +114,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Record Content -->
+        <!-- community Content -->
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/guidList"
+            android:id="@+id/community_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner_content"

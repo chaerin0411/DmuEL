@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/rounded_corner_feed"
         android:orientation="vertical"
@@ -40,7 +40,7 @@
 
                 <!-- User Name -->
                 <TextView
-                    android:id="@+id/userName"
+                    android:id="@+id/userId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="3dp"
@@ -69,15 +69,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/heart"
+                android:background="@drawable/favorite"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"></ImageView>
         </LinearLayout>
 
-        <!-- Comment Content -->
+        <!-- Comment Explain -->
         <TextView
-            android:id="@+id/commentContent"
+            android:id="@+id/commentExplain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="3dp"
