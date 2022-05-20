@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="30dp"
-    tools:context=".CommunityMessageActivity">
+    tools:context=".CommunityUploadActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,12 +26,12 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
 
-        <!-- Community -->
+        <!-- Upload -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Community"
+            android:text="Upload"
             android:textColor="#1D1617"
             android:textSize="18dp"
             android:textStyle="bold"></TextView>
@@ -46,28 +45,46 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-
     </LinearLayout>
-
-    <!-- Search -->
-    <androidx.appcompat.widget.SearchView
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:background="@drawable/rounded_corner_feed"></androidx.appcompat.widget.SearchView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <!-- messsage Content -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/message_recyclerviewList"
+        <!-- Upload Image -->
+        <ImageView
+            android:id="@+id/uploadImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/message_item_view"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="200dp"></ImageView>
+
+        <!-- Upload Explain -->
+        <EditText
+            android:id="@+id/uploadExplain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:hint="Explain"></EditText>
     </LinearLayout>
+
+    <!-- Upload Button -->
+    <TextView
+        android:id="@+id/uploadButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:text="Upload"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
 </LinearLayout>

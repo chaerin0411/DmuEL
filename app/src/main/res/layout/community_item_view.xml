@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/rounded_corner_feed"
@@ -45,8 +45,8 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
-                    android:text="Indoor Run"
-                    android:textColor="#000000"
+                    android:text="User"
+                    android:textColor="#040415"
                     android:textSize="17dp"
                     android:textStyle="bold" />
 
@@ -71,18 +71,17 @@
             android:layout_height="wrap_content"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:text="#오운완"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
+            android:text="I am very happy to be with Cafit in training sessions and how about you?"
+            android:textColor="#040415"
+            android:textSize="17dp" />
 
         <!-- Feed Image-->
         <ImageView
             android:id="@+id/feedImage"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/recordlist1" />
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feed_image" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,7 +101,7 @@
                     android:id="@+id/heartImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/heart"
+                    android:background="@drawable/favorite"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"></ImageView>
@@ -115,8 +114,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="246"
                     android:textColor="#1D1617"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18dp"></TextView>
             </LinearLayout>
 
             <LinearLayout
@@ -130,7 +128,7 @@
                     android:id="@+id/commentImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/heart"
+                    android:background="@drawable/comment"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"></ImageView>
@@ -143,8 +141,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="246"
                     android:textColor="#1D1617"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18dp"></TextView>
             </LinearLayout>
 
             <LinearLayout
@@ -153,26 +150,25 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <!-- Shared Image -->
+                <!-- Share Image -->
                 <ImageView
-                    android:id="@+id/sharedImage"
+                    android:id="@+id/shareImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/heart"
+                    android:background="@drawable/share"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"></ImageView>
 
-                <!-- Shared -->
+                <!-- Share -->
                 <TextView
-                    android:id="@+id/Shared"
+                    android:id="@+id/Share"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Shared"
+                    android:text="Share"
                     android:textColor="#1D1617"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18dp"></TextView>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

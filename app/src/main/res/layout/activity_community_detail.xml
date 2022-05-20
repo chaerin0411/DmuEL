@@ -9,9 +9,15 @@
     tools:context=".CommunityDetailActivity">
 
     <LinearLayout
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+=======
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+>>>>>>> origin/master
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -21,7 +27,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
+<<<<<<< HEAD
             android:background="@drawable/backarrow"
+=======
+            android:background="@drawable/arrow_back"
+>>>>>>> origin/master
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
@@ -53,7 +63,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
+<<<<<<< HEAD
         android:layout_marginBottom="10dp"
+=======
+>>>>>>> origin/master
         android:background="@drawable/rounded_corner_feed"
         android:gravity="center"
         android:orientation="vertical"
@@ -144,7 +157,11 @@
                     android:id="@+id/heartImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:background="@drawable/heart"
+=======
+                    android:background="@drawable/favorite"
+>>>>>>> origin/master
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"></ImageView>
@@ -205,7 +222,11 @@
 
                 <!-- Share -->
                 <TextView
+<<<<<<< HEAD
                     android:id="@+id/Share"
+=======
+                    android:id="@+id/share"
+>>>>>>> origin/master
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -223,11 +244,48 @@
 
         <!-- Comment Content -->
         <androidx.recyclerview.widget.RecyclerView
+<<<<<<< HEAD
             android:id="@+id/guidList"
+=======
+            android:id="@+id/comment_recyclerview"
+>>>>>>> origin/master
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/comment_item_view"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
+<<<<<<< HEAD
+=======
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <!-- Comment Message EditText -->
+    <EditText
+        android:id="@+id/comment_message_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <!-- Comment Send Button -->
+    <TextView
+        android:id="@+id/comment_send_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:text="Send"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+    </LinearLayout>
+>>>>>>> origin/master
 </LinearLayout>
