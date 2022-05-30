@@ -13,7 +13,7 @@ class GoalActivity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.confirmButton1.setOnClickListener {
-            var intent = Intent(applicationContext, WelcomeActivity::class.java)
+            var intent = Intent(applicationContext, GoalActivity3::class.java)
             startActivity(intent)
         }
     }

@@ -37,6 +37,9 @@
             android:name=".GoalActivity2"
             android:exported="false" />
         <activity
+            android:name=".GoalActivity3"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity

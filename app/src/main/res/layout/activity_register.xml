@@ -7,134 +7,104 @@
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
-    <!-- Hey there, -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:text="Hey there,"
         android:textColor="#1D1617"
         android:textSize="16dp"></TextView>
 
-    <!-- Create an Account -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Create an Account"
+        android:text="회원가입"
         android:textColor="#1D1617"
         android:textSize="20dp"
         android:textStyle="bold"></TextView>
 
-    <!-- Id -->
     <EditText
-        android:id="@+id/idEditText"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_edittext"
-        android:hint="  Id"></EditText>
+        android:paddingLeft="10dp"
+        android:hint="아이디"></EditText>
 
-    <!-- Password -->
     <EditText
-        android:id="@+id/passwordEditText"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rounded_corner_edittext"
-        android:hint="  Password"
+        android:hint="비밀번호"
+        android:paddingLeft="10dp"
         android:inputType="textPassword"></EditText>
 
-    <!-- Name -->
     <EditText
-        android:id="@+id/nameEditText"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rounded_corner_edittext"
-        android:hint="  Name"></EditText>
+        android:paddingLeft="10dp"
+        android:hint="비밀번호 확인"></EditText>
 
-    <!-- Phone -->
     <EditText
-        android:id="@+id/phoneEditText"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rounded_corner_edittext"
-        android:hint="  Phone"
-        android:inputType="phone"></EditText>
+        android:paddingLeft="10dp"
+        android:hint="이름"></EditText>
 
-    <!-- Email -->
     <EditText
-        android:id="@+id/emailEditText"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rounded_corner_edittext"
-        android:hint="  Email"
+        android:paddingLeft="10dp"
+        android:hint="닉네임"
         android:inputType="textEmailAddress"></EditText>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:paddingLeft="10dp"
+        android:hint="전화번호"
+        android:inputType="phone"></EditText>
 
     <!-- Register Button -->
     <TextView
         android:id="@+id/registerButton"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_button"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:padding="15dp"
-        android:text="Register"
+        android:text="가입하기"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"></TextView>
 
-    <!-- Or -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:src="@drawable/or"></ImageView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
 
-        <!-- Google -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:background="#fff"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:src="@drawable/google"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-
-        <!-- Facebook -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:src="@drawable/facebook"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-    </LinearLayout>
-
-    <!-- Already have an account? Login -->
     <TextView
-        android:id="@+id/loginTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="100dp"
-        android:text="Already have an account? Login"
+        android:text="이미 계정이 있나요? 로그인"
         android:textColor="#1D1617"
         android:textSize="14dp"></TextView>
+
 </LinearLayout>

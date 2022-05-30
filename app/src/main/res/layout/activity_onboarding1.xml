@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Track Your Goal"
+        android:text="목표 추적"
         android:textColor="#1D1617"
         android:textSize="24dp"
         android:textStyle="bold"></TextView>
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals"
+        android:text="목표를 결정하는 데 문제가 있어도 걱정하지 마십시오. 목표를 결정하고 목표를 추적하는 데 도움을 드릴 수 있습니다."
         android:textColor="#7B6F72"
         android:textSize="14dp"></TextView>
 
@@ -44,5 +44,5 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        android:src="@drawable/onboardingbutton1"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+        android:src="@drawable/onboarding_round_button"></androidx.constraintlayout.utils.widget.ImageFilterButton>
 </LinearLayout>
