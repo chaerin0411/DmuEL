@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:background="#FFDFE4"
     android:foreground="@drawable/illustration"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".WorkoutProjectActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -18,79 +17,362 @@
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/arrow_back" />
 
-        <!-- Workout Project -->
+        <!-- 나의 운동 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Workout Project"
+            android:text="나의 운동"
             android:textColor="#1D1617"
             android:textSize="18dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/more" />
     </LinearLayout>
-
-    <!-- Workout Project Image -->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/project"></ImageView>
-
-    <!-- Workout Project Type -->
-    <TextView
-        android:id="@+id/workoutProjectType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Full-Body Workout"
-        android:textColor="#1D1617"
-        android:textSize="18dp"
-        android:textStyle="bold"></TextView>
-
-    <!-- Workout Project content -->
-    <TextView
-        android:id="@+id/workoutProjectContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Shift stubborn body fat and build muscle"
-        android:textColor="#7F7F7F"
-        android:textSize="18dp"
-        android:textStyle="bold"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <!-- Project Content -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/project_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/rounded_corner_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/project_item_view"></androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon1 -->
+            <ImageView
+                android:id="@+id/projectList_icon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist1" />
+
+            <!-- ProjectList_title1 -->
+            <TextView
+                android:id="@+id/projectList_title1"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Bicep"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete1 -->
+            <ImageButton
+                android:id="@+id/projectList_delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon2 -->
+            <ImageView
+                android:id="@+id/projectList_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist2" />
+
+            <!-- ProjectList_title2 -->
+            <TextView
+                android:id="@+id/projectList_title2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Body-Back"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete2 -->
+            <ImageButton
+                android:id="@+id/projectList_delete2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon3 -->
+            <ImageView
+                android:id="@+id/projectList_icon3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist3" />
+
+            <!-- ProjectList_title3 -->
+            <TextView
+                android:id="@+id/projectList_title3"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Body-Butt"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete3 -->
+            <ImageButton
+                android:id="@+id/projectList_delete3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon4 -->
+            <ImageView
+                android:id="@+id/projectList_icon4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist4" />
+
+            <!-- ProjectList_title4 -->
+            <TextView
+                android:id="@+id/projectList_title4"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Legs and Core"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete4 -->
+            <ImageButton
+                android:id="@+id/projectList_delete4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon5 -->
+            <ImageView
+                android:id="@+id/projectList_icon5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist5" />
+
+            <!-- ProjectList_title5 -->
+            <TextView
+                android:id="@+id/projectList_title5"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Pectoral machine"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete5 -->
+            <ImageButton
+                android:id="@+id/projectList_delete5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon6 -->
+            <ImageView
+                android:id="@+id/projectList_icon6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist6" />
+
+            <!-- ProjectList_title6 -->
+            <TextView
+                android:id="@+id/projectList_title6"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Legs and Core"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete6 -->
+            <ImageButton
+                android:id="@+id/projectList_delete6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon7 -->
+            <ImageView
+                android:id="@+id/projectList_icon7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist7" />
+
+            <!-- ProjectList_title7 -->
+            <TextView
+                android:id="@+id/projectList_title7"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Weight bench"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete7 -->
+            <ImageButton
+                android:id="@+id/projectList_delete7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon8 -->
+            <ImageView
+                android:id="@+id/projectList_icon8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist8" />
+
+            <!-- ProjectList_title8 -->
+            <TextView
+                android:id="@+id/projectList_title8"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Weight loss"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete8 -->
+            <ImageButton
+                android:id="@+id/projectList_delete8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
     </LinearLayout>
+
+    <!-- 운동 추가하기 -->
+    <TextView
+        android:id="@+id/addButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_edittext"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:text="운동 추가하기"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <!-- 운동 시작하기 -->
+    <TextView
+        android:id="@+id/startButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:text="운동 시작하기"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </LinearLayout>

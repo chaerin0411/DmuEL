@@ -1,89 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:layout_marginBottom="5dp"
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/rounded_corner_feed"
-        android:orientation="vertical"
-        android:padding="30dp">
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 사용자 프로필 -->
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <!-- User Profile -->
-            <ImageView
-                android:id="@+id/userProfile"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/user" />
-
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <!-- User Name -->
-                <TextView
-                    android:id="@+id/userId"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="User"
-                    android:textColor="#040415"
-                    android:textSize="17dp"
-                    android:textStyle="bold" />
-
-                <!-- Comment time -->
-                <TextView
-                    android:id="@+id/commentTime"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="1분 전"
-                    android:textColor="#666666"
-                    android:textSize="17dp" />
-            </LinearLayout>
-
-            <!-- Heart Image -->
-            <ImageView
-                android:id="@+id/heartImage"
+            <!-- 사용자 이름 -->
+            <TextView
+                android:id="@+id/userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/favorite"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"></ImageView>
+                android:text="사용자"
+                android:textColor="#040415"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- 게시물 업로드 시간 -->
+            <TextView
+                android:id="@+id/uploadTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="6시간"
+                android:textColor="#7F7F7F"
+                android:textSize="17dp" />
         </LinearLayout>
 
-        <!-- Comment Explain -->
-        <TextView
-            android:id="@+id/commentExplain"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="운동 루틴과 식단 공유해주세요!"
-            android:textColor="#040415"
-            android:textSize="17dp" />
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 게시물 내용 -->
+            <TextView
+                android:id="@+id/feedContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="운동 루틴이랑 식단 공유해주세요!"
+                android:textColor="#040415"
+                android:textSize="17dp" />
+
+            <!-- 답글 달기 -->
+            <TextView
+                android:id="@+id/feedComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="답글 달기"
+                android:textColor="#7F7F7F"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <!-- 좋아요 버튼 -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/favorite" />
     </LinearLayout>
 </LinearLayout>

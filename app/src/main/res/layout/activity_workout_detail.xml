@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:background="#FFDFE4"
     android:foreground="@drawable/illustration"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".WorkoutDetailActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -18,188 +17,88 @@
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/arrow_back" />
 
-        <!-- Body-Back -->
+        <!-- 운동명 -->
         <TextView
             android:id="@+id/WorkoutTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Body-Back"
+            android:text="레터럴레이즈"
             android:textColor="#1D1617"
             android:textSize="18dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/more" />
     </LinearLayout>
 
     <!-- Workout Detail Image -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@drawable/project"></ImageView>
+        android:background="@drawable/project" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/rounded_corner_content"
         android:orientation="vertical"
         android:padding="30dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- 운동 코멘트 -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3">
+            android:layout_marginTop="40dp"
+            android:text="운동 코멘트"
+            android:textColor="#040415"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <!-- Heart Image -->
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/favorite"></ImageView>
-
-                <!-- WorkoutDetailKcal1 -->
-                <TextView
-                    android:id="@+id/workoutDetailKcal1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="246 Kcal"
-                    android:textColor="#1D1617"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
-
-                <!-- Last 7 days -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Last 7 days"
-                    android:textColor="#7F7F7F"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <!-- Heart Image -->
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/favorite"></ImageView>
-
-                <!-- workoutDetailKcal2 -->
-                <TextView
-                    android:id="@+id/workoutDetailKcal2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="84k Kcal"
-                    android:textColor="#1D1617"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
-
-                <!-- All Time -->
-                <TextView
-                    android:id="@+id/workoutProjectContent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="All Time"
-                    android:textColor="#7F7F7F"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <!-- Heart Image -->
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/favorite"></ImageView>
-
-                <!-- workoutDetailKcal3 -->
-                <TextView
-                    android:id="@+id/workoutDetailKcal3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="72 Kcal"
-                    android:textColor="#1D1617"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
-
-                <!-- Average -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Average"
-                    android:textColor="#7F7F7F"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- 운동 코멘트 -->
+        <TextView
+            android:id="@+id/workoutDetailComment"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!-- Information -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="Information"
-                android:textColor="#040415"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+            android:layout_marginTop="10dp"
+            android:text="측면 어깨를 타겟으로 하는 운동이에요. 측면 어깨 운동은 미적인 아름다움을 만들어주는 대표적인 어깨 운동으로 남자분들은 태평양 같은 넓은 어깨를 위해서 여자분들은 승모근의 라인을 커버하여 목부터 어깨라인을 살리기 위해 강력 추천드려요!"
+            android:textColor="#7F7F7F"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-            <!-- Workout Detail Content -->
-            <TextView
-                android:id="@+id/workoutDetailContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Shift stubborn body fat and build muscle with this total-body workout. If you’re an experienced gym-goer hitting the weights room for long sessions several times a week, the chances are you have a structured training plan that targets different areas of the body with each workout."
-                android:textColor="#7F7F7F"
-                android:textSize="18dp"
-                android:textStyle="bold"></TextView>
-        </LinearLayout>
+        <!-- 운동 가이드 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="운동 가이드"
+            android:textColor="#040415"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- 운동 가이드 -->
+        <TextView
+            android:id="@+id/workoutDetailGuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1. 두 다리를 어깨보다 좁게 벌리고 허리와 가슴을 곧게 펴주세요.\n2. 상체를 5~10도 정도 숙인채로 팔을 어깨 높이까지 들어주세요.\n3. 이 때, 어깨를 과도하게 으쓱하지 않도록 주의하세요.\n4. 내릴 때는 완전히 내려 어깨에 힘을 푸는 것이 아니라 어깨에 힘이 풀리기 전까지만 내려주세요."
+            android:textColor="#7F7F7F"
+            android:textSize="18dp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

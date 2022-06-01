@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="30dp"
     tools:context=".CommunityMessageActivity">
 
     <LinearLayout
@@ -17,57 +15,45 @@
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/arrow_back" />
 
-        <!-- Community -->
+        <!-- 메시지 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Community"
+            android:text="메시지"
             android:textColor="#1D1617"
             android:textSize="18dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-
+            android:background="@drawable/more" />
     </LinearLayout>
 
     <!-- Search -->
     <androidx.appcompat.widget.SearchView
-        android:layout_width="350dp"
+        android:layout_width="650dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="30dp"
-        android:background="@drawable/rounded_corner_feed"></androidx.appcompat.widget.SearchView>
+        android:background="@drawable/rounded_corner_comment" />
 
-    <LinearLayout
+    <!-- message Content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recyclerviewList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <!-- messsage Content -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/message_recyclerviewList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/message_item_view"></androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/message_item_view" />
 </LinearLayout>

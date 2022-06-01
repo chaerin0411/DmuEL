@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:background="#FFDFE4"
     android:foreground="@drawable/illustration"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".WorkoutGuidLibraryActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -18,50 +17,167 @@
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/arrow_back" />
 
-        <!-- Start Workout -->
+        <!-- 운동 가이드 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Start Workout"
+            android:text="운동 가이드"
             android:textColor="#1D1617"
             android:textSize="18dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/more" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <!-- Guid Content -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/guid_recyclerview"
-            android:layout_width="match_parent"
+        <!-- 전체 -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corner_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/guid_item_view"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_marginRight="30dp"
+            android:text="전체"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
+
+        <!-- 어깨 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="어깨"
+            android:textColor="#FF758B"
+            android:textSize="12dp" />
+
+        <!-- 등 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="등"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
+
+        <!-- 하체 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="하체"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
+
+        <!-- 이두 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="이두"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
+
+        <!-- 삼두 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="삼두"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
+
+        <!-- 코어 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="코어"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
+
+        <!-- 유산소 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="유산소"
+            android:textColor="#7B6F72"
+            android:textSize="12dp" />
     </LinearLayout>
+
+    <!-- Search -->
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_comment" />
+
+    <!-- 선택한 운동 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="운동을 추가해 주세요."
+        android:textColor="#1D1617"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- 선택한 운동 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="레터럴레이즈 (덤벨)"
+        android:textColor="#7F7F7F"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- Guid Content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/guid_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_content"
+        android:paddingTop="30dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/guid_item_view" />
+
+    <!-- 운동 생성하기 -->
+    <TextView
+        android:id="@+id/generateButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:text="운동 생성하기"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </LinearLayout>

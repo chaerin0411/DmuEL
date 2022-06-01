@@ -64,7 +64,7 @@
             android:name=".CommunityActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunityDetailActivity"
+            android:name=".CommunityCommentActivity"
             android:exported="false" />
         <activity
             android:name=".CommunityMessageActivity"

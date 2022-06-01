@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".CommunityUploadActivity">
 
@@ -16,75 +15,71 @@
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/arrow_back" />
 
-        <!-- Upload -->
+        <!-- 게시물 업로드 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Upload"
+            android:text="게시물 업로드"
             android:textColor="#1D1617"
             android:textSize="18dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/more" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:orientation="vertical">
 
-        <!-- Upload Image -->
+        <!-- 업로드 이미지 -->
         <ImageView
             android:id="@+id/uploadImage"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"></ImageView>
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:background="#ddd" />
 
-        <!-- Upload Explain -->
+        <!-- 업로드 내용 -->
         <EditText
             android:id="@+id/uploadExplain"
-            android:layout_width="match_parent"
+            android:layout_width="600dp"
             android:layout_height="200dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corner_edittext"
-            android:hint="Explain"></EditText>
+            android:hint="업로드 할 내용을 입력해주세요."
+            android:paddingLeft="10dp" />
     </LinearLayout>
 
-    <!-- Upload Button -->
     <TextView
-        android:id="@+id/uploadButton"
+        android:id="@+id/UploadButton"
         android:layout_width="350dp"
         android:layout_height="60dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_button"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:padding="15dp"
-        android:text="Upload"
+        android:text="업로드하기"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="20dp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold" />
 </LinearLayout>

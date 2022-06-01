@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE LinearLayout [<!ELEMENT LinearLayout (LinearLayout|ImageButton|TextView|ImageView|androidx.constraintlayout.utils.widget.ImageFilterButton|androidx.appcompat.widget.SearchView|androidx.recyclerview.widget.RecyclerView)*><!ATTLIST LinearLayoutandroid:gravity CDATA #IMPLIEDandroid:layout_height CDATA #REQUIREDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:orientation CDATA #REQUIREDandroid:padding CDATA #IMPLIEDtools:context CDATA #IMPLIEDxmlns:android CDATA #IMPLIEDxmlns:app CDATA #IMPLIEDxmlns:tools CDATA #IMPLIED><!ELEMENT ImageButton (#PCDATA)><!ATTLIST ImageButtonandroid:background CDATA #REQUIREDandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginRight CDATA #IMPLIEDandroid:layout_width CDATA #REQUIRED><!ELEMENT TextView (#PCDATA)><!ATTLIST TextViewandroid:id CDATA #IMPLIEDandroid:layout_height CDATA #REQUIREDandroid:layout_marginRight CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:paddingBottom CDATA #IMPLIEDandroid:paddingTop CDATA #IMPLIEDandroid:text CDATA #REQUIREDandroid:textColor CDATA #REQUIREDandroid:textSize CDATA #REQUIREDandroid:textStyle CDATA #IMPLIED><!ELEMENT ImageView (#PCDATA)><!ATTLIST ImageViewandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginRight CDATA #REQUIREDandroid:background CDATA #REQUIRED><!ELEMENT androidx.constraintlayout.utils.widget.ImageFilterButton (#PCDATA)><!ATTLIST androidx.constraintlayout.utils.widget.ImageFilterButtonandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:background CDATA #REQUIREDandroid:clickable CDATA #REQUIREDandroid:focusable CDATA #REQUIREDandroid:foreground CDATA #REQUIRED><!ELEMENT androidx.appcompat.widget.SearchView (#PCDATA)><!ATTLIST androidx.appcompat.widget.SearchViewandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:background CDATA #REQUIRED><!ELEMENT androidx.recyclerview.widget.RecyclerView (#PCDATA)><!ATTLIST androidx.recyclerview.widget.RecyclerViewandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:background CDATA #REQUIREDapp:layoutManager CDATA #REQUIREDtools:listitem CDATA #REQUIRED>]>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".CommunityActivity">
 
@@ -15,69 +14,30 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:id="@+id/backButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-
-        <!-- Community -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:text="Community"
-            android:textColor="#1D1617"
-            android:textSize="18dp"
-            android:textStyle="bold"></TextView>
-
-        <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:id="@+id/moreButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="30dp">
-
         <!-- User Profile -->
         <ImageView
             android:id="@+id/userProfile"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/project"></ImageView>
+            android:layout_marginRight="20dp"
+            android:background="@drawable/project" />
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="400dp"
             android:orientation="vertical">
 
-            <!-- User Name -->
+            <!-- 사용자 이름 -->
             <TextView
                 android:id="@+id/userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="Hello User"
-                android:textColor="#7F7F7F"
-                android:textSize="17dp"></TextView>
+                android:text="사용자님"
+                android:textColor="#040415"
+                android:textSize="17dp" />
 
             <!-- Date -->
             <TextView
@@ -86,32 +46,50 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:text="Thursday, 08 July"
-                android:textColor="#040415"
+                android:text="2022년 6월 2일"
+                android:textColor="#7F7F7F"
                 android:textSize="17dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Message Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:id="@+id/messageButton"
+        <!-- 업로드 버튼 -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/uploadButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/message"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/upload" />
+
+        <!-- 좋아요 버튼 -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/favorite" />
+
+        <!-- Messanger Button -->
+        <ImageButton
+            android:id="@+id/messangerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/messanger" />
     </LinearLayout>
 
     <!-- Search -->
     <androidx.appcompat.widget.SearchView
-        android:layout_width="350dp"
+        android:layout_width="750dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corner_feed"></androidx.appcompat.widget.SearchView>
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_comment" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:orientation="vertical">
 
         <!-- community Content -->
@@ -121,6 +99,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/community_item_view"></androidx.recyclerview.widget.RecyclerView>
+            tools:listitem="@layout/community_item_view" />
     </LinearLayout>
 </LinearLayout>

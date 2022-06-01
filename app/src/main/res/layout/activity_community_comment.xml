@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommunityCommentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Back Arrow Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/arrow_back" />
+
+        <!-- 댓글 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="댓글"
+            android:textColor="#1D1617"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!-- More Button -->
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 사용자 프로필 -->
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 사용자 이름 -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용자"
+                android:textColor="#040415"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- 게시물 업로드 시간 -->
+            <TextView
+                android:id="@+id/uploadTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="6시간"
+                android:textColor="#7F7F7F"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 게시물 내용 -->
+            <TextView
+                android:id="@+id/feedContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오운완"
+                android:textColor="#040415"
+                android:textSize="17dp" />
+
+            <!-- 수정 여부 -->
+            <TextView
+                android:id="@+id/feedAmend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="수정됨"
+                android:textColor="#7F7F7F"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Comment Content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corner_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/comment_item_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 사용자 프로필 -->
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/user" />
+
+        <!-- 댓글 창 -->
+        <EditText
+            android:id="@+id/comment_edit"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rounded_corner_comment"
+            android:hint="댓글 달기..."
+            android:paddingLeft="10dp" />
+
+        <!-- Comment Send Button -->
+        <Button
+            android:id="@+id/comment_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="15dp"
+            android:text="게시"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

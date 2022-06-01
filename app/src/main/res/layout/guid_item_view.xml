@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -20,7 +19,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist1"></ImageView>
+            android:background="@drawable/guidlist1" />
 
         <!-- GuidList_title1 -->
         <TextView
@@ -32,17 +31,18 @@
             android:text="Bicep"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add1 -->
+        <ImageButton
+            android:id="@+id/guidList_add1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -55,7 +55,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist2"></ImageView>
+            android:background="@drawable/guidlist2" />
 
         <!-- GuidList_title2 -->
         <TextView
@@ -67,17 +67,18 @@
             android:text="Body-Back"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add2 -->
+        <ImageButton
+            android:id="@+id/guidList_add2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -90,7 +91,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist3"></ImageView>
+            android:background="@drawable/guidlist3" />
 
         <!-- GuidList_title3 -->
         <TextView
@@ -102,17 +103,18 @@
             android:text="Body-Butt"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add3 -->
+        <ImageButton
+            android:id="@+id/guidList_add3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -125,7 +127,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist4"></ImageView>
+            android:background="@drawable/guidlist4" />
 
         <!-- GuidList_title4 -->
         <TextView
@@ -137,17 +139,18 @@
             android:text="Legs and Core"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add4 -->
+        <ImageButton
+            android:id="@+id/guidList_add4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -160,7 +163,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist5"></ImageView>
+            android:background="@drawable/guidlist5" />
 
         <!-- GuidList_title5 -->
         <TextView
@@ -172,17 +175,18 @@
             android:text="Pectoral machine"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add5 -->
+        <ImageButton
+            android:id="@+id/guidList_add5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -195,7 +199,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist6"></ImageView>
+            android:background="@drawable/guidlist6" />
 
         <!-- GuidList_title6 -->
         <TextView
@@ -207,17 +211,18 @@
             android:text="Legs and Core"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add6 -->
+        <ImageButton
+            android:id="@+id/guidList_add6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -230,7 +235,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist7"></ImageView>
+            android:background="@drawable/guidlist7" />
 
         <!-- GuidList_title7 -->
         <TextView
@@ -242,17 +247,18 @@
             android:text="Weight bench"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add7 -->
+        <ImageButton
+            android:id="@+id/guidList_add7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -265,7 +271,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist8"></ImageView>
+            android:background="@drawable/guidlist8" />
 
         <!-- GuidList_title8 -->
         <TextView
@@ -277,12 +283,13 @@
             android:text="Weight loss"
             android:textColor="#000000"
             android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <!-- GuidList_add8 -->
+        <ImageButton
+            android:id="@+id/guidList_add8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/add" />
     </LinearLayout>
 </LinearLayout>

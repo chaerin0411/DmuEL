@@ -1,300 +1,303 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
     android:orientation="vertical">
 
-    <!-- Exercises -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="5dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"
-        android:text="Exercises"
-        android:textColor="#7F7F7F"
-        android:textSize="17dp"
-        android:textStyle="bold"></TextView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:orientation="vertical">
 
-        <!-- ProjectList_icon1 -->
-        <ImageView
-            android:id="@+id/projectList_icon1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist1"></ImageView>
-
-        <!-- ProjectList_title1 -->
-        <TextView
-            android:id="@+id/projectList_title1"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Bicep"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
-
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon1 -->
+            <ImageView
+                android:id="@+id/projectList_icon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist1" />
 
-        <!-- ProjectList_icon2 -->
-        <ImageView
-            android:id="@+id/projectList_icon2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist2"></ImageView>
+            <!-- ProjectList_title1 -->
+            <TextView
+                android:id="@+id/projectList_title1"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Bicep"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title2 -->
-        <TextView
-            android:id="@+id/projectList_title2"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Body-Back"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete1 -->
+            <ImageButton
+                android:id="@+id/projectList_delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon2 -->
+            <ImageView
+                android:id="@+id/projectList_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist2" />
 
-        <!-- ProjectList_icon3 -->
-        <ImageView
-            android:id="@+id/projectList_icon3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist3"></ImageView>
+            <!-- ProjectList_title2 -->
+            <TextView
+                android:id="@+id/projectList_title2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Body-Back"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title3 -->
-        <TextView
-            android:id="@+id/projectList_title3"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Body-Butt"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete2 -->
+            <ImageButton
+                android:id="@+id/projectList_delete2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon3 -->
+            <ImageView
+                android:id="@+id/projectList_icon3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist3" />
 
-        <!-- ProjectList_icon4 -->
-        <ImageView
-            android:id="@+id/projectList_icon4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist4"></ImageView>
+            <!-- ProjectList_title3 -->
+            <TextView
+                android:id="@+id/projectList_title3"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Body-Butt"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title4 -->
-        <TextView
-            android:id="@+id/projectList_title4"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Legs and Core"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete3 -->
+            <ImageButton
+                android:id="@+id/projectList_delete3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon4 -->
+            <ImageView
+                android:id="@+id/projectList_icon4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist4" />
 
-        <!-- ProjectList_icon5 -->
-        <ImageView
-            android:id="@+id/projectList_icon5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist5"></ImageView>
+            <!-- ProjectList_title4 -->
+            <TextView
+                android:id="@+id/projectList_title4"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Legs and Core"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title5 -->
-        <TextView
-            android:id="@+id/projectList_title5"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Pectoral machine"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete4 -->
+            <ImageButton
+                android:id="@+id/projectList_delete4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon5 -->
+            <ImageView
+                android:id="@+id/projectList_icon5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist5" />
 
-        <!-- ProjectList_icon6 -->
-        <ImageView
-            android:id="@+id/projectList_icon6"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist6"></ImageView>
+            <!-- ProjectList_title5 -->
+            <TextView
+                android:id="@+id/projectList_title5"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Pectoral machine"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title6 -->
-        <TextView
-            android:id="@+id/projectList_title6"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Legs and Core"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete5 -->
+            <ImageButton
+                android:id="@+id/projectList_delete5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon6 -->
+            <ImageView
+                android:id="@+id/projectList_icon6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist6" />
 
-        <!-- ProjectList_icon7 -->
-        <ImageView
-            android:id="@+id/projectList_icon7"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist7"></ImageView>
+            <!-- ProjectList_title6 -->
+            <TextView
+                android:id="@+id/projectList_title6"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Legs and Core"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title7 -->
-        <TextView
-            android:id="@+id/projectList_title7"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Weight bench"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete6 -->
+            <ImageButton
+                android:id="@+id/projectList_delete6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
+            <!-- ProjectList_icon7 -->
+            <ImageView
+                android:id="@+id/projectList_icon7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist7" />
 
-        <!-- ProjectList_icon8 -->
-        <ImageView
-            android:id="@+id/projectList_icon8"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist8"></ImageView>
+            <!-- ProjectList_title7 -->
+            <TextView
+                android:id="@+id/projectList_title7"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Weight bench"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
-        <!-- ProjectList_title8 -->
-        <TextView
-            android:id="@+id/projectList_title8"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Weight loss"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold"></TextView>
+            <!-- ProjectList_delete7 -->
+            <ImageButton
+                android:id="@+id/projectList_delete7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
 
-        <!-- Arrow_icon -->
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!-- ProjectList_icon8 -->
+            <ImageView
+                android:id="@+id/projectList_icon8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/guidlist8" />
+
+            <!-- ProjectList_title8 -->
+            <TextView
+                android:id="@+id/projectList_title8"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Weight loss"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <!-- ProjectList_delete8 -->
+            <ImageButton
+                android:id="@+id/projectList_delete8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

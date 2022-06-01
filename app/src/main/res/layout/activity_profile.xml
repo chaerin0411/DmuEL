@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".ProfileActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -17,35 +16,29 @@
         android:orientation="horizontal">
 
         <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/arrow_back" />
 
-        <!-- Profile -->
+        <!-- 프로필 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:text="Profile"
+            android:text="프로필"
             android:textColor="#1D1617"
             android:textSize="18dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
+        <ImageButton
             android:id="@+id/moreButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground" ></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            android:background="@drawable/more" />
     </LinearLayout>
 
     <!-- Account -->
@@ -53,15 +46,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:text="Account"
         android:textColor="#1D1617"
         android:textSize="18dp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -92,7 +84,7 @@
                 android:text="User"
                 android:textColor="#000000"
                 android:textSize="17dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold" />
 
             <!-- User Level -->
             <TextView
@@ -104,29 +96,239 @@
                 android:paddingBottom="3dp"
                 android:text="Pro"
                 android:textColor="#666666"
-                android:textSize="17dp"></TextView>
+                android:textSize="17dp" />
         </LinearLayout>
 
         <!-- Arrow_icon -->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/arrow"></ImageView>
+            android:background="@drawable/arrow" />
+    </LinearLayout>
+
+    <!-- Settings -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Settings"
+        android:textColor="#1D1617"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- profileList_icon1 -->
+        <ImageView
+            android:id="@+id/profileList_icon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist1" />
+
+        <!-- profileList_title1 -->
+        <TextView
+            android:id="@+id/profileList_title1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Goals"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/arrow" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-        <!-- Guid Content -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/guidList"
-            android:layout_width="match_parent"
+        <!-- ProfileList_icon2 -->
+        <ImageView
+            android:id="@+id/profileList_icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist2" />
+
+        <!-- ProfileList_title2 -->
+        <TextView
+            android:id="@+id/profileList_title2"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_corner_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/profile_item_view"></androidx.recyclerview.widget.RecyclerView>
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="My Workouts"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- ProfileList_icon3 -->
+        <ImageView
+            android:id="@+id/profileList_icon3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist3" />
+
+        <!-- ProfileList_title3 -->
+        <TextView
+            android:id="@+id/profileList_title3"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="My Feeds"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- ProfileList_icon4 -->
+        <ImageView
+            android:id="@+id/profileList_icon4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist4" />
+
+        <!-- ProfileList_title4 -->
+        <TextView
+            android:id="@+id/profileList_title4"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="My Favorites"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- ProfileList_icon5 -->
+        <ImageView
+            android:id="@+id/profileList_icon5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist5" />
+
+        <!-- ProfileList_title5 -->
+        <TextView
+            android:id="@+id/profileList_title5"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Notification"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- ProfileList_icon6 -->
+        <ImageView
+            android:id="@+id/profileList_icon6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/guidlist6" />
+
+        <!-- ProfileList_title6 -->
+        <TextView
+            android:id="@+id/profileList_title6"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <!-- Arrow_icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/arrow" />
     </LinearLayout>
 </LinearLayout>
