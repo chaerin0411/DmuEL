@@ -1,75 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFDFE4"
-    android:foreground="@drawable/illustration"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".WorkoutRecordActivity">
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <!-- Back Arrow Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:id="@+id/backButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-
-        <!-- Calendar -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:text="Calendar"
-            android:textColor="#1D1617"
-            android:textSize="18dp"
-            android:textStyle="bold"></TextView>
-
-        <!-- More Button -->
-        <androidx.constraintlayout.utils.widget.ImageFilterButton
-            android:id="@+id/moreButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/more"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
-    </LinearLayout>
-
-    <!-- Calendar -->
-    <CalendarView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"></CalendarView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <!-- Record Content -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/record_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/rounded_corner_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/record_item_view"></androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Back Arrow Button -->
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/arrow_back"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+                <!-- Body-Back -->
+                <TextView
+                    android:id="@+id/WorkoutTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Calendar"
+                    android:textColor="#1D1617"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+                <!-- More Button -->
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/moreButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이전"/>
+
+                <TextView
+                    android:id="@+id/today_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2021년 8월"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이후"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Sun"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Mon"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Tue"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Wed"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Thu"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Fri"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF6079"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Sat"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="총 운동 개수" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8개"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="총 운동 시간"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01:00:00"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="총 무게 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500kg"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="전체보기"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:background="@drawable/record_workout_round_button"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/workoutDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40dp"
+                        android:text="레터럴레이즈"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/btnArrow"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_arrow_down"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/record_workout_detail_round"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/record_workout_detail" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/workoutDetailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="레터럴 레이즈" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="35min" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="193dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5세트" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100kg" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>
