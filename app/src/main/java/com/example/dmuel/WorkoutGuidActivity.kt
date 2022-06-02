@@ -12,6 +12,15 @@ class WorkoutGuidActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.recommendedButton.setOnClickListener {
+
+        }
+
+        binding.customButton.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutGuidLibraryActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

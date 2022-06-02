@@ -112,6 +112,7 @@
     </LinearLayout>
 
     <!-- Comment Content -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/comment_recyclerview"
         android:layout_width="match_parent"

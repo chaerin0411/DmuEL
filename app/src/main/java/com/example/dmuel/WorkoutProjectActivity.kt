@@ -12,5 +12,13 @@ class WorkoutProjectActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.addButton.setOnClickListener {
+
+        }
+
+        binding.startButton.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutStartActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

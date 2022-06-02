@@ -66,7 +66,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/UploadButton"
+        android:id="@+id/uploadButton"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_gravity="center"

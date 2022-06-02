@@ -12,5 +12,8 @@ class CommunityCommentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.commentSendButton.setOnClickListener {
+
+        }
     }
 }

@@ -12,5 +12,18 @@ class CommunityActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.uploadButton.setOnClickListener {
+            var intent = Intent(applicationContext, CommunityUploadActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.favoriteButton.setOnClickListener {
+
+        }
+
+        binding.messangerButton.setOnClickListener {
+            var intent = Intent(applicationContext, CommunityMessageActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

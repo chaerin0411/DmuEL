@@ -12,5 +12,8 @@ class CommunityUploadActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.uploadButton.setOnClickListener {
+
+        }
     }
 }
