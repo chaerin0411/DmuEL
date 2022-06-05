@@ -1,8 +1,8 @@
 package com.example.dmuel
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dmuel.databinding.ActivityWorkoutGuidLibraryBinding
 
 class WorkoutGuidLibraryActivity : AppCompatActivity() {
@@ -12,5 +12,8 @@ class WorkoutGuidLibraryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        val adapter = WorkoutGuidLibraryAdapter(this)
+        binding.guidRecyclerview.adapter = adapter
+        binding.guidRecyclerview.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 }

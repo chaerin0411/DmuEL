@@ -104,8 +104,8 @@
             <!-- ProjectList_title2 -->
             <TextView
                 android:id="@+id/projectList_title2"
-                android:layout_width="300dp"
-                android:layout_height="match_parent"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
                 android:text="Body-Back"

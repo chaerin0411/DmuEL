@@ -29,6 +29,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guid3" />
+    <Button
+        android:id="@+id/guidButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guid4" />
 
     <Button
         android:id="@+id/photoButton"
@@ -46,6 +51,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Community2" />
+    <Button
+        android:id="@+id/communityButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community3" />
+    <Button
+        android:id="@+id/communityButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community4" />
 
     <Button
         android:id="@+id/profileButton"

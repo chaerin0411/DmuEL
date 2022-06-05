@@ -18,17 +18,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.guidButton1.setOnClickListener {
-            var intent = Intent(applicationContext, WorkoutGuidLibraryActivity::class.java)
+            var intent = Intent(applicationContext, WorkoutGuidActivity::class.java)
             startActivity(intent)
         }
 
         binding.guidButton2.setOnClickListener {
-            var intent = Intent(applicationContext, WorkoutDetailActivity::class.java)
+            var intent = Intent(applicationContext, WorkoutGuidLibraryActivity::class.java)
             startActivity(intent)
         }
 
         binding.guidButton3.setOnClickListener {
             var intent = Intent(applicationContext, WorkoutProjectActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.guidButton4.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutDetailActivity::class.java)
             startActivity(intent)
         }
 
@@ -43,7 +48,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.communityButton2.setOnClickListener {
-            var intent = Intent(applicationContext, CommunityMessageActivity::class.java)
+            var intent = Intent(applicationContext, CommunityCommentActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.communityButton3.setOnClickListener {
+            var intent = Intent(applicationContext, CommunityUploadActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.communityButton4.setOnClickListener {
+            var intent = Intent(applicationContext, CommunityMessangerActivity::class.java)
             startActivity(intent)
         }
 

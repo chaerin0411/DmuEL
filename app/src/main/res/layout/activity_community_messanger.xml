@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CommunityMessageActivity">
+    tools:context=".CommunityMessangerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,10 +50,10 @@
 
     <!-- message Content -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/message_recyclerviewList"
+        android:id="@+id/messange_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corner_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/message_item_view" />
+        tools:listitem="@layout/messanger_item_view" />
 </LinearLayout>

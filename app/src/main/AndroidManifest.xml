@@ -52,6 +52,9 @@
             android:name=".WorkoutRecordActivity"
             android:exported="false" />
         <activity
+            android:name=".WorkoutGuidActivity"
+            android:exported="false" />
+        <activity
             android:name=".WorkoutGuidLibraryActivity"
             android:exported="false" />
         <activity
@@ -70,7 +73,10 @@
             android:name=".CommunityCommentActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunityMessageActivity"
+            android:name=".CommunityMessangerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityUploadActivity"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"

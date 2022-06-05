@@ -3,6 +3,7 @@ package com.example.dmuel
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dmuel.databinding.ActivityCommunityBinding
 
 class CommunityActivity : AppCompatActivity() {
@@ -22,8 +23,12 @@ class CommunityActivity : AppCompatActivity() {
         }
 
         binding.messangerButton.setOnClickListener {
-            var intent = Intent(applicationContext, CommunityMessageActivity::class.java)
+            var intent = Intent(applicationContext, CommunityMessangerActivity::class.java)
             startActivity(intent)
         }
+
+        val adapter = CommunityAdapter(this)
+        binding.communityRecyclerview.adapter = adapter
+        binding.communityRecyclerview.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 }

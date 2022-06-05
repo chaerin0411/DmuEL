@@ -39,7 +39,7 @@
 
             <!-- 메시지 내용 -->
             <TextView
-                android:id="@+id/messageContent"
+                android:id="@+id/messangerContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -50,7 +50,7 @@
 
         <!-- 메시지 보낸 시간 -->
         <TextView
-            android:id="@+id/sandTime"
+            android:id="@+id/sendTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="400dp"

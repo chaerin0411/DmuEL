@@ -13,17 +13,17 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <!-- GuidList_icon1 -->
+        <!-- GuidList_icon -->
         <ImageView
-            android:id="@+id/guidList_icon1"
+            android:id="@+id/guidList_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist1" />
+            android:src="@drawable/guidlist1" />
 
-        <!-- GuidList_title1 -->
+        <!-- GuidList_title -->
         <TextView
-            android:id="@+id/guidList_title1"
+            android:id="@+id/guidList_title"
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:paddingTop="3dp"
@@ -33,263 +33,11 @@
             android:textSize="17dp"
             android:textStyle="bold" />
 
-        <!-- GuidList_add1 -->
+        <!-- GuidList_add -->
         <ImageButton
-            android:id="@+id/guidList_add1"
+            android:id="@+id/guidList_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon2 -->
-        <ImageView
-            android:id="@+id/guidList_icon2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist2" />
-
-        <!-- GuidList_title2 -->
-        <TextView
-            android:id="@+id/guidList_title2"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Body-Back"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add2 -->
-        <ImageButton
-            android:id="@+id/guidList_add2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon3 -->
-        <ImageView
-            android:id="@+id/guidList_icon3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist3" />
-
-        <!-- GuidList_title3 -->
-        <TextView
-            android:id="@+id/guidList_title3"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Body-Butt"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add3 -->
-        <ImageButton
-            android:id="@+id/guidList_add3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon4 -->
-        <ImageView
-            android:id="@+id/guidList_icon4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist4" />
-
-        <!-- GuidList_title4 -->
-        <TextView
-            android:id="@+id/guidList_title4"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Legs and Core"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add4 -->
-        <ImageButton
-            android:id="@+id/guidList_add4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon5 -->
-        <ImageView
-            android:id="@+id/guidList_icon5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist5" />
-
-        <!-- GuidList_title5 -->
-        <TextView
-            android:id="@+id/guidList_title5"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Pectoral machine"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add5 -->
-        <ImageButton
-            android:id="@+id/guidList_add5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon6 -->
-        <ImageView
-            android:id="@+id/guidList_icon6"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist6" />
-
-        <!-- GuidList_title6 -->
-        <TextView
-            android:id="@+id/guidList_title6"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Legs and Core"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add6 -->
-        <ImageButton
-            android:id="@+id/guidList_add6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon7 -->
-        <ImageView
-            android:id="@+id/guidList_icon7"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist7" />
-
-        <!-- GuidList_title7 -->
-        <TextView
-            android:id="@+id/guidList_title7"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Weight bench"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add7 -->
-        <ImageButton
-            android:id="@+id/guidList_add7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- GuidList_icon8 -->
-        <ImageView
-            android:id="@+id/guidList_icon8"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist8" />
-
-        <!-- GuidList_title8 -->
-        <TextView
-            android:id="@+id/guidList_title8"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Weight loss"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- GuidList_add8 -->
-        <ImageButton
-            android:id="@+id/guidList_add8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/add" />
+            android:src="@drawable/add" />
     </LinearLayout>
 </LinearLayout>

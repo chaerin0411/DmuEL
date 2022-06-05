@@ -25,7 +25,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/user" />
+                android:src="@drawable/user" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
             android:id="@+id/feedImage"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="@drawable/feed_image" />
+            android:src="@drawable/feed_image" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -71,30 +71,27 @@
             android:orientation="horizontal">
 
             <!-- 좋아요 버튼 -->
-            <androidx.appcompat.widget.AppCompatImageView
+            <ImageView
                 android:id="@+id/favoriteButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/favorite" />
+                android:src="@drawable/favorite" />
 
             <!-- 댓글 버튼 -->
-            <androidx.appcompat.widget.AppCompatImageView
+            <ImageView
                 android:id="@+id/commentButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginRight="20dp"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/comment" />
+                android:src="@drawable/comment" />
 
             <!-- 공유 버튼 -->
-            <androidx.appcompat.widget.AppCompatImageView
+            <ImageView
                 android:id="@+id/messangerButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/messanger" />
+                android:src="@drawable/messanger" />
         </LinearLayout>
 
         <!-- 좋아요 개수 -->
@@ -110,7 +107,7 @@
 
         <!-- 댓글 개수 -->
         <TextView
-            android:id="@+id/commendCount"
+            android:id="@+id/commentCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
