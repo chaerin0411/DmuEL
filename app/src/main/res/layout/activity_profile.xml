@@ -5,330 +5,346 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".ProfileActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <!-- Back Arrow Button -->
-        <ImageButton
-            android:id="@+id/backButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/arrow_back" />
-
-        <!-- 프로필 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:text="프로필"
-            android:textColor="#1D1617"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
-        <!-- More Button -->
-        <ImageButton
-            android:id="@+id/moreButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/more" />
-    </LinearLayout>
-
-    <!-- Account -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginTop="10dp"
-        android:text="Account"
-        android:textColor="#1D1617"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- User Profile -->
-        <ImageView
-            android:id="@+id/userProfile"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/project" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- User Name -->
-            <TextView
-                android:id="@+id/userName"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
-                android:text="User"
-                android:textColor="#000000"
-                android:textSize="17dp"
-                android:textStyle="bold" />
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
 
-            <!-- User Level -->
-            <TextView
-                android:id="@+id/userLevel"
-                android:layout_width="match_parent"
+                <!-- 뒤로가기 -->
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/backarrow" />
+
+                <!-- Profile -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_gravity="center"
+                    android:text="프로필"
+                    android:textColor="#1D1617"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <!-- More Button -->
+                <ImageButton
+                    android:id="@+id/moreButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/more"/>
+            </LinearLayout>
+
+            <!-- Account -->
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
-                android:text="Pro"
-                android:textColor="#666666"
-                android:textSize="17dp" />
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="20dp"
+                    android:text="사용자 정보"
+                    android:textColor="#1D1617"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- User Profile -->
+                    <ImageView
+                        android:id="@+id/userProfile"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/project" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- User Name -->
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="김동양"
+                            android:textColor="#000000"
+                            android:textSize="17dp"
+                            android:textStyle="bold"></TextView>
+
+                        <!-- User Level -->
+                        <TextView
+                            android:id="@+id/userLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="초급"
+                            android:textColor="#666666"
+                            android:textSize="17dp"></TextView>
+                    </LinearLayout>
+
+                    <!-- Arrow_icon -->
+                    <ImageButton
+                        android:id="@+id/btn_editProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 등급 그래프 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/level1"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="Level. 1"/>
+
+                <!-- 레벨 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 / 5"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <ProgressBar
+                    android:id="@+id/progressbar_levle"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progressTint="#FF6079"
+                    android:progressBackgroundTint="#ffeef2"
+                    android:progressBackgroundTintMode="src_over"
+                    android:max="5"
+                    android:progress="1"/>
+
+                <!-- 현재 레벨에 대한 경험치 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50 / 100"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <ProgressBar
+                    android:id="@+id/progressbar_exp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progressTint="#FF6079"
+                    android:progressBackgroundTint="#ffeef2"
+                    android:progressBackgroundTintMode="src_over"
+                    android:max="100"
+                    android:progress="50"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="20dp"
+                    android:text="설정"
+                    android:textColor="#1D1617"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- profileList_icon1 -->
+                    <ImageView
+                        android:id="@+id/profileList_icon1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/guidlist1"></ImageView>
+
+                    <!-- profileList_title1 -->
+                    <TextView
+                        android:id="@+id/profileList_title1"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="목표 설정"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <!-- Arrow_icon -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- profileList_icon1 -->
+                    <ImageView
+                        android:id="@+id/profileList_icon2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/guidlist2"></ImageView>
+
+                    <!-- profileList_title1 -->
+                    <TextView
+                        android:id="@+id/profileList_title2"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="로그아웃"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <!-- Arrow_icon -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!-- profileList_icon1 -->
+                    <ImageView
+                        android:id="@+id/profileList_icon3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/guidlist3"></ImageView>
+
+                    <!-- profileList_title1 -->
+                    <TextView
+                        android:id="@+id/profileList_title3"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="privacy"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <!-- Arrow_icon -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow"></ImageView>
+                </LinearLayout>
+
+
+
+
+
+                <!-- Guid Content
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/guidList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_corner_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/profile_item_view"></androidx.recyclerview.widget.RecyclerView>
+            -->
+            </LinearLayout>
         </LinearLayout>
+    </ScrollView>
 
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
-
-    <!-- Settings -->
-    <TextView
+    <!-- 하단 탭 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="Settings"
-        android:textColor="#1D1617"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/tab_menu" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- profileList_icon1 -->
-        <ImageView
-            android:id="@+id/profileList_icon1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist1" />
-
-        <!-- profileList_title1 -->
-        <TextView
-            android:id="@+id/profileList_title1"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Goals"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="400dp"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- ProfileList_icon2 -->
-        <ImageView
-            android:id="@+id/profileList_icon2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist2" />
-
-        <!-- ProfileList_title2 -->
-        <TextView
-            android:id="@+id/profileList_title2"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="My Workouts"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="400dp"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- ProfileList_icon3 -->
-        <ImageView
-            android:id="@+id/profileList_icon3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist3" />
-
-        <!-- ProfileList_title3 -->
-        <TextView
-            android:id="@+id/profileList_title3"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="My Feeds"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="400dp"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- ProfileList_icon4 -->
-        <ImageView
-            android:id="@+id/profileList_icon4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist4" />
-
-        <!-- ProfileList_title4 -->
-        <TextView
-            android:id="@+id/profileList_title4"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="My Favorites"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="400dp"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- ProfileList_icon5 -->
-        <ImageView
-            android:id="@+id/profileList_icon5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist5" />
-
-        <!-- ProfileList_title5 -->
-        <TextView
-            android:id="@+id/profileList_title5"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Notification"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="400dp"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-        <!-- ProfileList_icon6 -->
-        <ImageView
-            android:id="@+id/profileList_icon6"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/guidlist6" />
-
-        <!-- ProfileList_title6 -->
-        <TextView
-            android:id="@+id/profileList_title6"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:text="Logout"
-            android:textColor="#000000"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <!-- Arrow_icon -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="400dp"
-            android:background="@drawable/arrow" />
-    </LinearLayout>
 </LinearLayout>
