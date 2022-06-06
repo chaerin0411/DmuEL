@@ -13,7 +13,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.homeButton.setOnClickListener {
-            var intent = Intent(applicationContext, MainActivity::class.java)
+            var intent = Intent(applicationContext, HomeActivity::class.java)
             startActivity(intent)
         }
     }
