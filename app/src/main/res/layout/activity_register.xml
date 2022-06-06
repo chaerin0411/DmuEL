@@ -32,17 +32,37 @@
         android:paddingLeft="10dp"
         android:hint="아이디"></EditText>
 
-    <EditText
-        android:id="@+id/editPw"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rounded_corner_edittext"
-        android:hint="비밀번호"
-        android:paddingLeft="10dp"
-        android:inputType="textPassword"></EditText>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <EditText
+        <EditText
+            android:id="@+id/editPw"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:hint="비밀번호"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"></EditText>
+
+        <ImageButton
+            android:id="@+id/btnHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22.5dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_hide"
+            android:tag="0"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
         android:id="@+id/editPwCheck"
         android:layout_width="350dp"
         android:layout_height="48dp"
@@ -51,6 +71,18 @@
         android:paddingLeft="10dp"
         android:hint="비밀번호 확인"
         android:inputType="textPassword"></EditText>
+
+        <ImageButton
+            android:id="@+id/btnHideAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22.5dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_hide"
+            android:tag="0"/>
+
+    </FrameLayout>
 
     <EditText
         android:id="@+id/editName"

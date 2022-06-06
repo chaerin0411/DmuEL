@@ -17,6 +17,7 @@
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/record_workout_round_button.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/round_edit.xml" value="0.1645" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_button.xml" value="0.1" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_edittext.xml" value="0.1435" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_comment.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_detail.xml" value="0.176" />
@@ -33,7 +34,7 @@
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding2.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_onboarding3.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register.xml" value="0.152" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_detail.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_guid.xml" value="0.1" />

@@ -3,6 +3,9 @@ package com.example.dmuel
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.util.Log
 import android.widget.Toast
 import com.example.dmuel.databinding.ActivityRegisterBinding
@@ -15,6 +18,30 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        binding.btnHide.setOnClickListener {
+            if(binding.btnHide.tag.equals(0)) {
+                binding.btnHide.tag = 1
+                binding.btnHide.setImageResource(R.drawable.ic_unhide)
+                binding.editPw.transformationMethod = PasswordTransformationMethod.getInstance()
+            } else {
+                binding.btnHide.tag = 0
+                binding.btnHide.setImageResource(R.drawable.ic_hide)
+                binding.editPw.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            }
+        }
+
+        binding.btnHideAgain.setOnClickListener {
+            if(binding.btnHideAgain.tag.equals(0)) {
+                binding.btnHideAgain.tag = 1
+                binding.btnHideAgain.setImageResource(R.drawable.ic_unhide)
+                binding.editPwCheck.transformationMethod = PasswordTransformationMethod.getInstance()
+            } else {
+                binding.btnHideAgain.tag = 0
+                binding.btnHideAgain.setImageResource(R.drawable.ic_hide)
+                binding.editPwCheck.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            }
+        }
 
         binding.registerButton.setOnClickListener {
             var editId = binding.editId.text.toString()
