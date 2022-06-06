@@ -18,6 +18,7 @@
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_content.xml" value="0.1255" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_edittext.xml" value="0.1255" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/rounded_corner_feed.xml" value="0.1255" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/workout_custom.xml" value="0.1585" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community.xml" value="0.12" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_comment.xml" value="0.1" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_message.xml" value="0.175" />
@@ -37,13 +38,14 @@
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_welcome.xml" value="0.22" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_detail.xml" value="0.175" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_details.xml" value="0.11367753623188406" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_guid.xml" value="0.1" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_guid_library.xml" value="0.175" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_project.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_project.xml" value="0.115" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_record.xml" value="0.1" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_workout_start.xml" value="0.12" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/comment_item_view.xml" value="0.1" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/community_item_view.xml" value="0.1" />
-        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/guid_item_view.xml" value="0.1" />
+        <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/guid_item_view.xml" value="0.25" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/message_item_view.xml" value="0.175" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/messanger_item_view.xml" value="0.1" />
         <entry key="..\:/Users/chaer/AndroidStudioProjects/DmuEL/app/src/main/res/layout/profile_item_view.xml" value="0.175" />

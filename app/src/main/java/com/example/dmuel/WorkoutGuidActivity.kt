@@ -13,7 +13,8 @@ class WorkoutGuidActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.recommendedButton.setOnClickListener {
-
+            var intent = Intent(applicationContext, WorkoutProjectActivity::class.java)
+            startActivity(intent)
         }
 
         binding.customButton.setOnClickListener {

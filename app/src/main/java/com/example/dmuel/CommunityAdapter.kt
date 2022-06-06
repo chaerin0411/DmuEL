@@ -1,12 +1,10 @@
 package com.example.dmuel
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class Community(
@@ -22,19 +20,21 @@ class Community(
     val feedContent: String
     )
 
-class CommunityAdapter(val context: Context) : RecyclerView.Adapter<CommunityAdapter.ViewHolder>() {
-    val communityList = arrayListOf(
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다."),
-        Community(R.drawable.user, "사용자", "2022-06-04", R.drawable.feed_image, R.drawable.favorite, R.drawable.comment, R.drawable.messanger, "회원님 외 1,532명이 좋아합니다", "댓글 32개 모두 보기", "오운완\n오늘의 운동 루틴과 식단 공유합니다.")
-    )
+class CommunityAdapter(private val communityList: ArrayList<Community>) : RecyclerView.Adapter<CommunityAdapter.ViewHolder>() {
+
+    // 커스텀 리스너 인터페이스 정의
+    interface OnItemClickListener {
+        fun onItemClick(v: Community, position: Int)
+    }
+
+    // 리스너 객체를 전달하는 메서드와 전달된 객체를 저장할 변수 추가
+    // 리스너 객체 참조를 저장하는 변수
+    private var mListener: CommunityAdapter.OnItemClickListener? = null
+
+    // OnItemClickListener 리스너 객체 참조를 어댑터에 전달하는 메서드
+    fun setOnItemClickListener(listener: CommunityAdapter.OnItemClickListener) {
+        this.mListener = listener
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflatedView =
@@ -55,8 +55,11 @@ class CommunityAdapter(val context: Context) : RecyclerView.Adapter<CommunityAda
         holder.commentCount.text = curData.commentCount
         holder.feedContent.text = curData.feedContent
 
-        holder.itemView.setOnClickListener{
-            Toast.makeText(context, communityList[position].userName, Toast.LENGTH_SHORT).show()
+        val listener = View.OnClickListener { it ->
+            if(position!= RecyclerView.NO_POSITION)
+            {
+                mListener?.onItemClick(curData, position)
+            }
         }
     }
 

@@ -1,30 +1,32 @@
 package com.example.dmuel
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 
 class Guid(val guidList_icon: Int, val guidList_title: String, val guidList_add: Int)
 
-class WorkoutGuidLibraryAdapter(val context: Context) : RecyclerView.Adapter<WorkoutGuidLibraryAdapter.ViewHolder>() {
-    val guidList = arrayListOf(
-        Guid(R.drawable.guidlist1, "숄더프레스", R.drawable.add),
-        Guid(R.drawable.guidlist2, "레터럴레이즈", R.drawable.add),
-        Guid(R.drawable.guidlist3, "벤치프레스", R.drawable.add),
-        Guid(R.drawable.guidlist4, "레그익스텐션", R.drawable.add),
-        Guid(R.drawable.guidlist5, "딥스", R.drawable.add),
-        Guid(R.drawable.guidlist6, "풀업", R.drawable.add),
-        Guid(R.drawable.guidlist7, "데드리프트", R.drawable.add),
-        Guid(R.drawable.guidlist8, "바벨로우", R.drawable.add),
-        Guid(R.drawable.guidlist9, "이두컬", R.drawable.add)
-    )
+class WorkoutGuidLibraryAdapter(private val guidList: ArrayList<Guid>) : RecyclerView.Adapter<WorkoutGuidLibraryAdapter.ViewHolder>() {
+
+    // 커스텀 리스너 인터페이스 정의
+    interface OnItemClickListener {
+        fun onItemClick(v: Community, position: Int)
+        fun onItemClick(data: Guid, pos: Int)
+    }
+
+    // 리스너 객체를 전달하는 메서드와 전달된 객체를 저장할 변수 추가
+    // 리스너 객체 참조를 저장하는 변수
+    private var mListener: WorkoutGuidLibraryAdapter.OnItemClickListener? = null
+
+    // OnItemClickListener 리스너 객체 참조를 어댑터에 전달하는 메서드
+    fun setOnItemClickListener(listener: WorkoutGuidLibraryAdapter.OnItemClickListener) {
+        this.mListener = listener
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflatedView =
@@ -38,8 +40,12 @@ class WorkoutGuidLibraryAdapter(val context: Context) : RecyclerView.Adapter<Wor
         holder.guidList_title.text = curData.guidList_title
         holder.guidList_add.setImageResource(curData.guidList_add)
 
-        holder.itemView.setOnClickListener{
-            Toast.makeText(context, guidList[position].guidList_title, Toast.LENGTH_SHORT).show()
+
+        val listener = View.OnClickListener { it ->
+            if(position!= RecyclerView.NO_POSITION)
+            {
+                mListener?.onItemClick(curData, position)
+            }
         }
     }
 

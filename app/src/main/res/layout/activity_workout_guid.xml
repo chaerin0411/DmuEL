@@ -104,6 +104,7 @@
             android:textSize="18dp"
             android:textStyle="bold" />
 
+        <!-- 추천 운동 시작하기 -->
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="300dp"
             android:layout_height="200dp"
@@ -112,7 +113,6 @@
             android:adjustViewBounds="true"
             app:srcCompat="@drawable/workout_custom" />
 
-        <!-- 추천 운동 시작하기 -->
         <TextView
             android:id="@+id/customButton"
             android:layout_width="350dp"
