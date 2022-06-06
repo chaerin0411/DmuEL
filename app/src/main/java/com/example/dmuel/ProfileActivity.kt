@@ -12,5 +12,10 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.btnEditProfile.setOnClickListener {
+            var intent = Intent(applicationContext, ProfileModifyActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
