@@ -3,14 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/goal2.xml" value="0.1435" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/goal3.xml" value="0.1435" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_back.xml" value="0.1435" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_foot.xml" value="0.1435" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_idu.xml" value="0.1435" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_leg.xml" value="0.1435" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_rest.xml" value="0.1435" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/ic_shoulder.xml" value="0.1435" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/round_button.xml" value="0.1645" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/round_corner_text.xml" value="0.1645" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable-v24/rounded_corner_editText.xml" value="0.1645" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/add.xml" value="0.1435" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/bc_goal_button.xml" value="0.113" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/goal1.xml" value="0.1435" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_hide.xml" value="0.1365" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_idu.xml" value="0.1435" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1645" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_shoulder.xml" value="0.218" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/ic_unhide.xml" value="0.1365" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/onboarding_round_button.xml" value="0.113" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/record_round_button.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/drawable/record_workout_detail_round.xml" value="0.1" />
@@ -24,8 +37,8 @@
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_messanger.xml" value="0.1" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_community_upload.xml" value="0.136" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal1.xml" value="0.136" />
-        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal2.xml" value="0.16" />
-        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal3.xml" value="0.2" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal2.xml" value="0.128" />
+        <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_goal3.xml" value="0.4" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_join.xml" value="0.11963696369636964" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_lgoin.xml" value="0.11963696369636964" />
         <entry key="..\:/Users/BEAK/AndroidStudioProjects/DmuEL/app/src/main/res/layout/activity_login.xml" value="0.2" />

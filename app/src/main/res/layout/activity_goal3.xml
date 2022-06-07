@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="목표를 알려주세요"
         android:textColor="#1D1617"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"></TextView>
 
     <!-- It will help us to choose a best program for you -->
@@ -41,16 +41,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="목적"/>
 
             <TextView
+                android:id="@+id/textGoal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="체중 감량"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"/>
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -66,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="단계"/>
 
@@ -74,9 +75,9 @@
                 android:id="@+id/text_step"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="고급"
+                android:text="초급"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"/>
+                android:textSize="12sp"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -91,168 +92,189 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textMon"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="월"/>
 
             <TextView
+                android:id="@+id/textMonValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="어깨"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textTue"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="화"/>
 
             <TextView
+                android:id="@+id/textTueValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="등"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textWed"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="수"/>
 
             <TextView
+                android:id="@+id/textWedValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="어깨"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textThu"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="목"/>
 
             <TextView
+                android:id="@+id/textThuValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="어깨"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textFri"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="금"/>
 
             <TextView
+                android:id="@+id/textFriValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="어깨"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textSat"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="토"/>
 
             <TextView
+                android:id="@+id/textSatValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="어꺠"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textSun"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:textColor="#1D1617"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="일"/>
 
             <TextView
+                android:id="@+id/textSunValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#7B6F72"
-                android:textSize="12dp"
-                android:text="어깨"/>
+                android:textSize="12sp"
+                android:text="선택"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -271,9 +293,10 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnShoulder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_shoulder_button"/>
+                android:background="@drawable/ic_shoulder"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -290,9 +313,10 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnLeg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_leg_button"/>
+                android:background="@drawable/ic_leg"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -308,9 +332,10 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnFoot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_shoulder_button"/>
+                android:background="@drawable/ic_foot"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -335,9 +360,10 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_shoulder_button"/>
+                android:background="@drawable/ic_back"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -354,9 +380,10 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnIdu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_shoulder_button"/>
+                android:background="@drawable/ic_idu"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -372,9 +399,10 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btnRest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_shoulder_button"/>
+                android:background="@drawable/ic_rest"/>
 
             <TextView
                 android:layout_width="wrap_content"

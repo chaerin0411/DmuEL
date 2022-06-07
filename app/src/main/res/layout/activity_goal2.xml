@@ -32,22 +32,25 @@
         android:orientation="horizontal">
 
         <!-- Left Goal -->
-        <ImageButton
+        <Button
+            android:id="@+id/goal1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/goal1"></ImageButton>
+            android:background="@drawable/goal1"></Button>
 
         <!-- Improve Shape -->
-        <ImageView
+        <Button
+            android:id="@+id/goal2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/goal2"></ImageView>
+            android:background="@drawable/goal2"></Button>
 
         <!-- Right Goal -->
-        <ImageView
+        <Button
+            android:id="@+id/goal3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/goal3"></ImageView>
+            android:background="@drawable/goal3"></Button>
     </LinearLayout>
 
     <!-- Confirm Button -->
