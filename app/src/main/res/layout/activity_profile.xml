@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="70dp"
                 android:orientation="horizontal">
 
                 <!-- 뒤로가기 -->
@@ -79,7 +79,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="70dp"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:padding="5dp">
@@ -139,7 +139,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginBottom="70dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -201,6 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
+                android:layout_marginBottom="70dp"
                 android:orientation="vertical"
                 android:layout_gravity="center">
 
@@ -218,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:orientation="horizontal"
                     android:padding="5dp">
 
@@ -226,9 +228,9 @@
                     <ImageView
                         android:id="@+id/profileList_icon1"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_height="27dp"
                         android:layout_marginRight="30dp"
-                        android:background="@drawable/guidlist1"></ImageView>
+                        android:background="@drawable/ic_goal"></ImageView>
 
                     <!-- profileList_title1 -->
                     <TextView
@@ -252,9 +254,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:gravity="center"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:layout_gravity="center">
 
                     <!-- profileList_icon1 -->
                     <ImageView
@@ -262,7 +264,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginRight="30dp"
-                        android:background="@drawable/guidlist2"></ImageView>
+                        android:background="@drawable/ic_login"></ImageView>
 
                     <!-- profileList_title1 -->
                     <TextView
@@ -286,17 +288,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:gravity="center"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:layout_gravity="center">
 
                     <!-- profileList_icon1 -->
                     <ImageView
                         android:id="@+id/profileList_icon3"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
-                        android:background="@drawable/guidlist3"></ImageView>
+                        android:background="@drawable/privacy"></ImageView>
 
                     <!-- profileList_title1 -->
                     <TextView
@@ -305,7 +307,7 @@
                         android:layout_height="match_parent"
                         android:paddingTop="3dp"
                         android:paddingBottom="3dp"
-                        android:text="privacy"
+                        android:text="보안"
                         android:textColor="#000000"
                         android:textSize="17dp"
                         android:textStyle="bold"></TextView>
@@ -316,20 +318,6 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/arrow"></ImageView>
                 </LinearLayout>
-
-
-
-
-
-                <!-- Guid Content
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/guidList"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/rounded_corner_content"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    tools:listitem="@layout/profile_item_view"></androidx.recyclerview.widget.RecyclerView>
-            -->
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -339,12 +327,12 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         app:itemBackground="@color/white"
         app:itemIconTint="@color/black"
         app:labelVisibilityMode="unlabeled"
+        app:elevation="0dp"
         app:menu="@menu/tab_menu" />
-
 </LinearLayout>
