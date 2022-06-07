@@ -49,6 +49,7 @@ class CommunityActivity : AppCompatActivity() {
         adapter.setOnItemClickListener(object : CommunityAdapter.OnItemClickListener {
             override fun onItemClick(data: Community, pos: Int) {
                 Toast.makeText(applicationContext, "IfCall Clicked -> Name : ${data.userName}", Toast.LENGTH_SHORT).show()
+
             }
         })
 

@@ -95,8 +95,9 @@
         <!-- community Content -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/community_recyclerview"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@drawable/rounded_corner_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/community_item_view" />
