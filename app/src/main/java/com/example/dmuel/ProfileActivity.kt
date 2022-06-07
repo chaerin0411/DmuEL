@@ -26,16 +26,9 @@ class ProfileActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnNavigationItemSelectedListener { item: MenuItem ->
             when(item.itemId) {
                 R.id.tabhome -> {
-                    try {
-                        // 액티비티 화면 재갱신 시키는 코드
-                        val intent = intent
-                        finish() //현재 액티비티 종료 실시
-                        overridePendingTransition(0, 0) //인텐트 애니메이션 없애기
-                        startActivity(intent) //현재 액티비티 재실행 실시
-                        overridePendingTransition(0, 0) //인텐트 애니메이션 없애기
-                    } catch (e: Exception) {
-                        e.printStackTrace()
-                    }
+                    var intent = Intent(applicationContext, HomeActivity::class.java)
+                    startActivity(intent)
+                    true
                 }
 
                 R.id.tabcalendar -> {
@@ -56,9 +49,16 @@ class ProfileActivity : AppCompatActivity() {
                     true
                 }
                 R.id.tabmypage -> {
-                    var intent = Intent(applicationContext, ProfileActivity::class.java)
-                    startActivity(intent)
-                    true
+                    try {
+                        // 액티비티 화면 재갱신 시키는 코드
+                        val intent = intent
+                        finish() //현재 액티비티 종료 실시
+                        overridePendingTransition(0, 0) //인텐트 애니메이션 없애기
+                        startActivity(intent) //현재 액티비티 재실행 실시
+                        overridePendingTransition(0, 0) //인텐트 애니메이션 없애기
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
                 }
             }
             return@setOnNavigationItemSelectedListener false
