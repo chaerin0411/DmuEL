@@ -22,11 +22,11 @@ class RegisterActivity : AppCompatActivity() {
         binding.btnHide.setOnClickListener {
             if(binding.btnHide.tag.equals(0)) {
                 binding.btnHide.tag = 1
-                binding.btnHide.setImageResource(R.drawable.ic_unhide)
+                binding.btnHide.setImageResource(R.drawable.ic_hide)
                 binding.editPw.transformationMethod = PasswordTransformationMethod.getInstance()
             } else {
                 binding.btnHide.tag = 0
-                binding.btnHide.setImageResource(R.drawable.ic_hide)
+                binding.btnHide.setImageResource(R.drawable.ic_unhide)
                 binding.editPw.transformationMethod = HideReturnsTransformationMethod.getInstance()
             }
         }
@@ -34,11 +34,11 @@ class RegisterActivity : AppCompatActivity() {
         binding.btnHideAgain.setOnClickListener {
             if(binding.btnHideAgain.tag.equals(0)) {
                 binding.btnHideAgain.tag = 1
-                binding.btnHideAgain.setImageResource(R.drawable.ic_unhide)
+                binding.btnHideAgain.setImageResource(R.drawable.ic_hide)
                 binding.editPwCheck.transformationMethod = PasswordTransformationMethod.getInstance()
             } else {
                 binding.btnHideAgain.tag = 0
-                binding.btnHideAgain.setImageResource(R.drawable.ic_hide)
+                binding.btnHideAgain.setImageResource(R.drawable.ic_unhide)
                 binding.editPwCheck.transformationMethod = HideReturnsTransformationMethod.getInstance()
             }
         }

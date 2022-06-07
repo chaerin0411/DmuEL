@@ -9,34 +9,37 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginTop="60dp">
+
 
         <LinearLayout
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="vertical">
 
             <!-- 1. 사용자 정보(이름, 프로필, 날짜) -->
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="500dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="58dp"
-                android:gravity="center_horizontal"
+                android:background="@drawable/profile_rounded"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
                     <ImageView
                         android:id="@+id/user_profile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
                         android:layout_marginRight="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/user_profile" />
 
@@ -70,7 +73,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/circle"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginLeft="110dp">
 
                         <Button
                             android:id="@+id/home_btn_cal"
@@ -87,8 +91,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="70dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -151,9 +155,9 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -168,12 +172,13 @@
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -188,12 +193,13 @@
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -204,16 +210,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="하" />
+                            android:text="하체" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -224,38 +231,40 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="이" />
+                            android:text="이두" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="15dp"
-                            android:textColor="#00F0FF"
-                            android:text="금" />
+                            android:text="금"
+                            android:textColor="#00F0FF" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="#00F0FF"
-                            android:text="삼두" />
+                            android:text="삼두"
+                            android:textColor="#00F0FF" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -266,16 +275,16 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="코" />
+                            android:text="코어" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="20dp"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -302,8 +311,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="70dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -320,7 +329,10 @@
                     android:layout_gravity="center"
                     android:background="@drawable/rounded_corner_myplan"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -328,8 +340,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_gravity="center"
                             android:layout_margin="24dp"
                             android:background="@drawable/circle_today"
@@ -348,14 +360,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="2dp"
                                 android:text="오늘 운동"
-                                android:textSize="12sp" />
+                                android:textSize="15sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="2dp"
                                 android:text="어깨"
-                                android:textSize="18sp"
+                                android:textSize="20sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -363,7 +375,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="2dp"
                                 android:text="5개 중 1번째"
-                                android:textSize="12sp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -371,18 +383,19 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="24dp"
+                        android:layout_marginLeft="14dp"
                         android:layout_marginRight="24dp"
                         android:layout_marginBottom="24dp"
                         android:background="@drawable/rounded_corner_content"
                         android:orientation="horizontal"
-                        android:padding="10dp">
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginRight="20dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/next" />
@@ -397,15 +410,16 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
                                 android:text="다음 운동"
-                                android:textSize="12sp" />
+                                android:textSize="15sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginBottom="15dp"
                                 android:text="레터럴 레이즈"
-                                android:textSize="18sp"
+                                android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -443,7 +457,9 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp">
 
                         <!-- 오늘 할 운동 종류 -->
                         <LinearLayout
@@ -523,6 +539,7 @@
         app:itemBackground="@color/white"
         app:itemIconTint="@color/black"
         app:labelVisibilityMode="unlabeled"
+        app:elevation="0dp"
         app:menu="@menu/tab_menu" />
 
 

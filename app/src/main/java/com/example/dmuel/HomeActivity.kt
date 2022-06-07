@@ -36,30 +36,30 @@ class HomeActivity : AppCompatActivity() {
                 R.id.tabhome -> {
                     var intent = Intent(applicationContext, HomeActivity::class.java)
                     startActivity(intent)
-                    true
+                    //true
                 }
 
                 R.id.tabcalendar -> {
                     var intent = Intent(applicationContext, CalendarAdapter::class.java)
                     startActivity(intent)
-                    true
+                    //true
                 }
 
 
                 R.id.tabworkout -> {
                     var intent = Intent(applicationContext, WorkoutStartActivity::class.java)
                     startActivity(intent)
-                    true
+                    //true
                 }
                 R.id.tabcommunity -> {
                     var intent = Intent(applicationContext, CommunityActivity::class.java)
                     startActivity(intent)
-                    true
+                    //true
                 }
                 R.id.tabmypage -> {
                     var intent = Intent(applicationContext, ProfileActivity::class.java)
                     startActivity(intent)
-                    true
+                    //true
                 }
             }
             return@setOnNavigationItemSelectedListener false
