@@ -8,21 +8,21 @@
     <item
         android:id="@+id/tabcalendar"
         android:enabled="true"
-        android:icon="@drawable/calendar"
+        android:icon="@drawable/tab_calendar"
         android:title="캘린더"/>
     <item
         android:id="@+id/tabworkout"
         android:enabled="true"
-        android:icon="@drawable/workout"
+        android:icon="@drawable/tab_workout"
         android:title="운동기록"/>
     <item
         android:id="@+id/tabcommunity"
         android:enabled="true"
-        android:icon="@drawable/community"
+        android:icon="@drawable/tab_community"
         android:title="커뮤니티"/>
     <item
         android:id="@+id/tabmypage"
         android:enabled="true"
-        android:icon="@drawable/profile"
+        android:icon="@drawable/tab_profile"
         android:title="마이페이지"/>
 </menu>

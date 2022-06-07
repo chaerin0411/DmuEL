@@ -4,19 +4,14 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dmuel.databinding.ActivityHomeBinding
-import com.google.android.material.navigation.NavigationBarView
-import java.text.DateFormat
-import java.text.SimpleDateFormat
-import java.util.*;
-
 
 
 class HomeActivity : AppCompatActivity() {
     val binding by lazy { ActivityHomeBinding.inflate(layoutInflater) }
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,9 +32,16 @@ class HomeActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnNavigationItemSelectedListener { item: MenuItem ->
             when(item.itemId) {
                 R.id.tabhome -> {
-                    var intent = Intent(applicationContext, HomeActivity::class.java)
-                    startActivity(intent)
-                    //true
+                    try {
+                        // 액티비티 화면 재갱신 시키는 코드
+                        val intent = intent
+                        finish() //현재 액티비티 종료 실시
+                        overridePendingTransition(0, 0) //인텐트 애니메이션 없애기
+                        startActivity(intent) //현재 액티비티 재실행 실시
+                        overridePendingTransition(0, 0) //인텐트 애니메이션 없애기
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
                 }
 
                 R.id.tabcalendar -> {
@@ -71,7 +73,11 @@ class HomeActivity : AppCompatActivity() {
 
 
 
+
+        //binding.bottomNavigationView.setOnClickListener()
+
     }
+
 
     /*
     fun getCurrentDate(): String {
@@ -101,5 +107,7 @@ class HomeActivity : AppCompatActivity() {
      */
 
 }
+
+
 
 
