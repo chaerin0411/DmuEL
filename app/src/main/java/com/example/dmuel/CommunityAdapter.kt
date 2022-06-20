@@ -55,6 +55,11 @@ class CommunityAdapter(private val communityList: ArrayList<Community>) : Recycl
         holder.commentCount.text = curData.commentCount
         holder.feedContent.text = curData.feedContent
 
+        holder.favoriteButton.setOnClickListener {
+            holder.favoriteButton.setImageResource(R.drawable.favorite_full)
+            holder.favoriteCount.text = curData.favoriteCount + 1
+        }
+
         val listener = View.OnClickListener { it ->
             if(position!= RecyclerView.NO_POSITION)
             {

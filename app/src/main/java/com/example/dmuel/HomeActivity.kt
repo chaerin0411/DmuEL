@@ -1,9 +1,11 @@
 package com.example.dmuel
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dmuel.databinding.ActivityHomeBinding
 import com.google.android.material.navigation.NavigationBarView
@@ -15,6 +17,7 @@ import java.util.*;
 
 class HomeActivity : AppCompatActivity() {
     val binding by lazy { ActivityHomeBinding.inflate(layoutInflater) }
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -23,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
         // 사용자 정보에서 캘린더 버튼 클릭 시, 캘린더 페이지로 이동
 
         binding.homeBtnCal.setOnClickListener {
-            var intent = Intent(applicationContext, CalendarAdapter::class.java)
+            var intent = Intent(applicationContext, WorkoutRecordActivity::class.java)
             startActivity(intent)
         }
 
@@ -40,14 +43,14 @@ class HomeActivity : AppCompatActivity() {
                 }
 
                 R.id.tabcalendar -> {
-                    var intent = Intent(applicationContext, CalendarAdapter::class.java)
+                    var intent = Intent(applicationContext, WorkoutRecordActivity::class.java)
                     startActivity(intent)
                     //true
                 }
 
 
                 R.id.tabworkout -> {
-                    var intent = Intent(applicationContext, WorkoutStartActivity::class.java)
+                    var intent = Intent(applicationContext, WorkoutGuidActivity::class.java)
                     startActivity(intent)
                     //true
                 }
