@@ -55,9 +55,20 @@ class CommunityAdapter(private val communityList: ArrayList<Community>) : Recycl
         holder.commentCount.text = curData.commentCount
         holder.feedContent.text = curData.feedContent
 
+        // 좋아요 버튼 클릭 시
         holder.favoriteButton.setOnClickListener {
             holder.favoriteButton.setImageResource(R.drawable.favorite_full)
-            holder.favoriteCount.text = curData.favoriteCount + 1
+            holder.favoriteCount.text = "회원님 외 " + curData.favoriteCount
+        }
+
+        // 댓글 버튼 클릭 시
+        holder.commentButton.setOnClickListener {
+
+        }
+
+        // 메센저 버튼 클릭 시
+        holder.messangerButton.setOnClickListener {
+
         }
 
         val listener = View.OnClickListener { it ->

@@ -40,7 +40,6 @@ class WorkoutGuidLibraryAdapter(private val guidList: ArrayList<Guid>) : Recycle
         holder.guidList_title.text = curData.guidList_title
         holder.guidList_add.setImageResource(curData.guidList_add)
 
-
         val listener = View.OnClickListener { it ->
             if(position!= RecyclerView.NO_POSITION)
             {

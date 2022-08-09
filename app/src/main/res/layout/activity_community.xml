@@ -25,7 +25,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="400dp"
+            android:layout_marginRight="200dp"
             android:orientation="vertical">
 
             <!-- 사용자 이름 -->
@@ -80,11 +80,12 @@
 
     <!-- Search -->
     <androidx.appcompat.widget.SearchView
-        android:layout_width="750dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rounded_corner_comment" />
+        android:background="@drawable/rounded_corner_comment"
+        android:baselineAligned="false" />
 
     <LinearLayout
         android:layout_width="match_parent"

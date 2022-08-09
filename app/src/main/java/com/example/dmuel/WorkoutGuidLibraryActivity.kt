@@ -26,11 +26,6 @@ class WorkoutGuidLibraryActivity : AppCompatActivity() {
             Guid(R.drawable.guidlist9, "이두컬", R.drawable.add)
         )
 
-        binding.generateButton.setOnClickListener {
-            var intent = Intent(applicationContext, WorkoutProjectActivity::class.java)
-            startActivity(intent)
-        }
-
         // guidRecyclerview에 WorkoutGuidLibraryAdapter 객체 지정
         val adapter = WorkoutGuidLibraryAdapter(guidList)
         binding.guidRecyclerview.adapter = adapter
@@ -43,11 +38,19 @@ class WorkoutGuidLibraryActivity : AppCompatActivity() {
 
             override fun onItemClick(data: Guid, pos: Int) {
                 Toast.makeText(applicationContext, "IfCall Clicked -> Name : ${data.guidList_title}", Toast.LENGTH_SHORT).show()
-                binding.addWorkout.text = "${binding.addWorkout.text}, ${data.guidList_title}"
+                binding.addWorkout.setOnClickListener {
+                    binding.addWorkout.text = "${binding.addWorkout.text}, ${data.guidList_title}"
+                }
+
             }
         })
 
         // guidRecyclerview에 LinearLayoutManager 객체 지정
         binding.guidRecyclerview.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        binding.generateButton.setOnClickListener {
+            var intent = Intent(applicationContext, WorkoutProjectActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
